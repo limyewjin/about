@@ -85,7 +85,7 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # -----------------------------------------------------------------------------
 
 blog_name: Yew Jin Lim # your blog must have a name for it to show up in the nav bar
-blog_description: a simple about page
+blog_description: I reject your reality and substitute my own
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -100,8 +100,6 @@ disqus_shortname: # put your disqus shortname
 # If you have blog posts published on medium.com or other exteranl sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -214,8 +212,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Lim
+  first_name: [Yew Jin]
 
   style: apa
   locale: en

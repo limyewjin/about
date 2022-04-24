@@ -93,7 +93,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: # put your disqus shortname
+disqus_shortname: yewjin-com # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -109,11 +109,9 @@ collections:
   news:
     defaults:
       layout: post
+      comments: true
     output: true
     permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
 
 news_limit: 5
 

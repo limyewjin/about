@@ -73,18 +73,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
-<<<<<<< HEAD
-twitter_username: _yewjin # your Twitter handle
+twitter_username: yewjin_eth # your Twitter handle
 mastodon_username: mas.to/@yewjin # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: yewjinlim # your LinkedIn user name
 scholar_userid: cvY_q0MAAAAJ # your Google Scholar ID
-=======
-twitter_username: @limyewjin # your Twitter handle
-mastodon_username: mas.to/@yewjin # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
-telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
->>>>>>> 11fea77 (remove baseurl)
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -128,13 +120,8 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Yew Jin Lim # your blog must have a name for it to show up in the nav bar
-<<<<<<< HEAD
 blog_nav_title: blog
 blog_description: I reject your reality and substitute my own
-=======
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple about page
->>>>>>> 11fea77 (remove baseurl)
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -159,13 +146,6 @@ disqus_shortname: # put your disqus shortname
 #  theme: preferred_color_scheme  # name of the color scheme (preferred works well with al-folio light/dark mode)
 #  emit_metadata: 0
 #  lang: en
-
-<<<<<<< HEAD
-=======
-# Disqus comments (DEPRECATED)
-disqus_shortname: # disqus
->>>>>>> 11fea77 (remove baseurl)
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other exteranl sources,

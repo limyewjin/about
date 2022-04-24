@@ -146,10 +146,6 @@ related_blog_posts:
 
 # Disqus comments (DEPRECATED)
 disqus_shortname: # disqus
-=======
-# Comments
-disqus_shortname: # put your disqus shortname
->>>>>>> 675bca9 (remove baseurl)
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.

@@ -26,6 +26,7 @@ Build and ship more product!
 
 Nope - not in NFTs. Since NFT creator revenue comes from NFT royalties, and basically revenue = units * price/unit.
 
+
 You _could_ get more revenue if you raised the number of items sold, but dilution will drive the unit price down. Boo.
 So that's why NFT creators focus on price/unit. If you create more value in your NFT, then your revenue goes up. The infrastructure to do this at scale wasn't available for all until smart contracts was available end-to-end from creator directly to buyers.
 
@@ -75,7 +76,6 @@ Here's another way to look at this: it's like having a black card IRL
 The fact that pfps are unique makes it more personalized but the most important part is that the art conveys status like how flashing your black card says something about your net worth or status
 
 What is the relevance of art in NFTs? It's the hook.
-
 
 # Investing in NFTs?
 

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T18:34:22+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">A Podcast for You! And You! And You!</title><link href="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/" rel="alternate" type="text/html" title="A Podcast for You! And You! And You!" /><published>2023-07-29T08:00:00+00:00</published><updated>2023-07-29T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2023/a-podcast-just-for-you</id><content type="html" xml:base="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/"><![CDATA[<p>Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process. Let’s explore how to leverage AI to curate, summarize, and transform online stories into personalized podcasts.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T18:39:30+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">A Podcast for You! And You! And You!</title><link href="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/" rel="alternate" type="text/html" title="A Podcast for You! And You! And You!" /><published>2023-07-29T08:00:00+00:00</published><updated>2023-07-29T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2023/a-podcast-just-for-you</id><content type="html" xml:base="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/"><![CDATA[<p>Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process.</p>
 
-<p>To start, here are sample podcasts created for a “tech user in the Bay Area” on July 29, 2023.</p>
+<p>Here are sample podcasts created for a “tech user in the Bay Area” on July 29, 2023.</p>
 
-<p><strong>Hacker News</strong></p>
+<h2 id="hacker-news">Hacker News</h2>
 <figure>
 
   <audio src="/assets/mp3/hacker_news_podcast_jul_27_23.mp3" controls="" />
@@ -28,7 +28,7 @@
 
 </figure>
 
-<p><strong>New York Times</strong></p>
+<h2 id="new-york-times">New York Times</h2>
 <figure>
 
   <audio src="/assets/mp3/nytimes-podcast-290723.mp3" controls="" />

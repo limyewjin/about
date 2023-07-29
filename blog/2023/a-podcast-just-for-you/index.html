@@ -121,11 +121,14 @@
     <p>Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process. Let’s explore how to leverage AI to curate, summarize, and transform online stories into personalized podcasts.</p>
 
 <p>To start, here’s a sample podcast created on July 29, 2023.</p>
+
 <figure>
 
   <audio src="/assets/mp3/hacker_news_podcast_jul_27_23.mp3" controls=""></audio>
 
 </figure>
+
+<p><a href="assets/txt/hacker_news_podcast_jul_27_23.txt">Download the transcript for the sample podcast</a></p>
 
 <figure>
 
@@ -143,26 +146,30 @@
 
 </figure>
 
-<h2 id="curating-online-stories">Curating Online Stories</h2>
-
-<p>Our journey begins with curating the stories. We navigate to the URL of the website we’re interested in and fetch the text content for processing.</p>
+<ol>
+  <li>
+<strong>Curating Online Stories:</strong> We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.</li>
+</ol>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">url</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">url</span>
 <span class="n">html</span> <span class="o">=</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="n">formatted_text</span> <span class="o">=</span> <span class="n">textapi</span><span class="p">.</span><span class="nf">scrape_text</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h2 id="extracting-and-selecting-topics">Extracting and Selecting Topics</h2>
-<p>Once we have the formatted text, we can extract main topics and stories using LLMs - the <a href="https://openai.com/blog/function-calling-and-other-api-updates" rel="external nofollow noopener" target="_blank">OpenAI Function Calling update</a> was particularly useful. This is done iteratively until we have a satisfactory selection of topics.</p>
-
-<h2 id="summarizing-stories-and-discussions">Summarizing Stories and Discussions</h2>
-<p>Next we can summarize the main stories and discussions using … LLMs. :-)</p>
-
-<h2 id="compiling-the-podcast-script">Compiling the Podcast Script</h2>
-<p>With the summaries of the stories and discussions, we can now compile our podcast script using LLMs. The entire podcast is then put together with all the information gathered so far with a “producer” LLM step.</p>
-
-<h2 id="converting-the-script-into-a-podcast">Converting the Script into a Podcast</h2>
-<p>Finally, we convert the podcast script into an actual podcast. We first generate the audio for each text segment using <a href="https://elevenlabs.io/speech-synthesis" rel="external nofollow noopener" target="_blank">ElevenLabs’ speech synthesis</a>.</p>
+<ol>
+  <li>
+    <p><strong>Extracting and Selecting Topics:</strong> Once we have the formatted text, we use LLMs to extract main topics and stories. Thanks to OpenAI’s function calling API update, this process can be executed iteratively until we have a satisfactory selection of topics.</p>
+  </li>
+  <li>
+    <p><strong>Summarizing Stories and Discussions:</strong> The next step is summarizing the main stories and discussions, and LLMs come to the rescue again.</p>
+  </li>
+  <li>
+    <p><strong>Compiling the Podcast Script:</strong> With the summaries, we compile our podcast script. The entire podcast is put together using a “producer” LLM step, which curates all the information gathered so far into a smooth-flowing narrative.</p>
+  </li>
+  <li>
+    <p><strong>Converting the Script into a Podcast:</strong> Finally, we convert the podcast script into an actual podcast. We generate the audio for each text segment using <a href="https://elevenlabs.io/speech-synthesis" rel="external nofollow noopener" target="_blank">ElevenLabs’ speech synthesis</a>.</p>
+  </li>
+</ol>
 
 <p>And voila! You now have your personalized podcast, ready to play, with stories and discussions from your favorite online sources.</p>
 

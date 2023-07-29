@@ -10,7 +10,7 @@ description: One small step for how LLMs are going to change your world
 Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process. Let's explore how to leverage AI to curate, summarize, and transform online stories into personalized podcasts.
 
 To start, here's a sample podcast created on July 29, 2023.
-{% include audio.html path="assets/mp3/hacker_news_podcast_jul_27_23.mp3.mp3" controls=true %}
+{% include audio.html path="assets/mp3/hacker_news_podcast_jul_27_23.mp3" controls=true %}
 {% include figure.html path="assets/img/hacker_news_page_270723.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Curating Online Stories

@@ -15,11 +15,13 @@ To start, here are sample podcasts created for a "tech user in the Bay Area" on 
 
 {% include figure.html path="assets/img/hacker_news_page_270723.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
+
+
 **New York Times**
 {% include audio.html path="assets/mp3/nytimes-podcast-290723.mp3" controls=true %}
 [Download the transcript for the sample podcast](assets/txt/nytimes-podcast-transcript-290723.txt)
 
-{% include figure.html path="assets/img/nytimes-podcast-290723.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/nytimes-290723.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 1. **Curating Online Stories:** We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.
 

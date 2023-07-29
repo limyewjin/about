@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T18:28:01+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T18:34:22+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">A Podcast for You! And You! And You!</title><link href="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/" rel="alternate" type="text/html" title="A Podcast for You! And You! And You!" /><published>2023-07-29T08:00:00+00:00</published><updated>2023-07-29T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2023/a-podcast-just-for-you</id><content type="html" xml:base="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/"><![CDATA[<p>Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process. Let’s explore how to leverage AI to curate, summarize, and transform online stories into personalized podcasts.</p>
 
 <p>To start, here are sample podcasts created for a “tech user in the Bay Area” on July 29, 2023.</p>
@@ -52,26 +52,6 @@
   </picture>
 
 </figure>
-
-<ol>
-  <li>
-    <p><strong>Curating Online Stories:</strong> We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.</p>
-  </li>
-  <li>
-    <p><strong>Extracting and Selecting Topics:</strong> Once we have the formatted text, we use LLMs to extract main topics and stories. Thanks to <a href="https://openai.com/blog/function-calling-and-other-api-updates">OpenAI’s function calling API</a> update, this process can be executed iteratively until we have a satisfactory selection of topics.</p>
-  </li>
-  <li>
-    <p><strong>Summarizing Stories and Discussions:</strong> The next step is summarizing the main stories and discussions, and LLMs come to the rescue again.</p>
-  </li>
-  <li>
-    <p><strong>Compiling the Podcast Script:</strong> With the summaries, we compile our podcast script. The entire podcast is put together using a “producer” LLM step, which curates all the information gathered so far into a smooth-flowing narrative.</p>
-  </li>
-  <li>
-    <p><strong>Converting the Script into a Podcast:</strong> Finally, we convert the podcast script into an actual podcast. We generate the audio for each text segment using <a href="https://elevenlabs.io/speech-synthesis">ElevenLabs’ speech synthesis</a>.</p>
-  </li>
-</ol>
-
-<p>And voila! You now have your personalized podcast, ready to play, with stories and discussions from your favorite online sources.</p>
 
 <p>By leveraging AI technologies like OpenAI’s GPT-4 for content curation and summarization, and ElevenLabs’ text-to-speech for converting the script into a podcast, we can automate the process of creating personalized podcasts. It’s an exciting time to explore the possibilities of AI in customizing and enhancing our consumption of online content.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[One small step for how LLMs are going to change your world]]></summary></entry><entry><title type="html">How LLM, Generative AI Image/Video, and Blockchain will Change the World in the Next 3 Years</title><link href="https://www.yewjin.com/blog/2023/llm/" rel="alternate" type="text/html" title="How LLM, Generative AI Image/Video, and Blockchain will Change the World in the Next 3 Years" /><published>2023-01-16T08:00:00+00:00</published><updated>2023-01-16T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2023/llm</id><content type="html" xml:base="https://www.yewjin.com/blog/2023/llm/"><![CDATA[<h1 id="how-llm-generative-ai-and-blockchain-are-going-to-change-the-world-in-the-next-3-years">How LLM, Generative AI, and Blockchain are Going to Change the World in the Next 3 Years</h1>
 

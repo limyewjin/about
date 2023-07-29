@@ -174,15 +174,8 @@
 
 <ol>
   <li>
-<strong>Curating Online Stories:</strong> We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.</li>
-</ol>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">url</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">url</span>
-<span class="n">html</span> <span class="o">=</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">formatted_text</span> <span class="o">=</span> <span class="n">textapi</span><span class="p">.</span><span class="nf">scrape_text</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
-</code></pre></div></div>
-
-<ol>
+    <p><strong>Curating Online Stories:</strong> We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.</p>
+  </li>
   <li>
     <p><strong>Extracting and Selecting Topics:</strong> Once we have the formatted text, we use LLMs to extract main topics and stories. Thanks to OpenAI’s function calling API update, this process can be executed iteratively until we have a satisfactory selection of topics.</p>
   </li>

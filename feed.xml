@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T18:17:21+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T18:18:20+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">A Podcast for You! And You! And You!</title><link href="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/" rel="alternate" type="text/html" title="A Podcast for You! And You! And You!" /><published>2023-07-29T08:00:00+00:00</published><updated>2023-07-29T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2023/a-podcast-just-for-you</id><content type="html" xml:base="https://www.yewjin.com/blog/2023/a-podcast-just-for-you/"><![CDATA[<p>Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process. Let’s explore how to leverage AI to curate, summarize, and transform online stories into personalized podcasts.</p>
 
 <p>To start, here are sample podcasts created for a “tech user in the Bay Area” on July 29, 2023.</p>
@@ -54,15 +54,9 @@
 </figure>
 
 <ol>
-  <li><strong>Curating Online Stories:</strong> We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.</li>
-</ol>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">url</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="n">url</span>
-<span class="n">html</span> <span class="o">=</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">formatted_text</span> <span class="o">=</span> <span class="n">textapi</span><span class="p">.</span><span class="nf">scrape_text</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
-</code></pre></div></div>
-
-<ol>
+  <li>
+    <p><strong>Curating Online Stories:</strong> We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.</p>
+  </li>
   <li>
     <p><strong>Extracting and Selecting Topics:</strong> Once we have the formatted text, we use LLMs to extract main topics and stories. Thanks to OpenAI’s function calling API update, this process can be executed iteratively until we have a satisfactory selection of topics.</p>
   </li>

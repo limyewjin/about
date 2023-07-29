@@ -25,7 +25,7 @@ To start, here are sample podcasts created for a "tech user in the Bay Area" on 
 
 1. **Curating Online Stories:** We navigate to the website URL of interest and use AI tools to fetch and format the text content for processing.
 
-2. **Extracting and Selecting Topics:** Once we have the formatted text, we use LLMs to extract main topics and stories. Thanks to OpenAI's function calling API update, this process can be executed iteratively until we have a satisfactory selection of topics.
+2. **Extracting and Selecting Topics:** Once we have the formatted text, we use LLMs to extract main topics and stories. Thanks to [OpenAI's function calling API](https://openai.com/blog/function-calling-and-other-api-updates) update, this process can be executed iteratively until we have a satisfactory selection of topics.
 
 3. **Summarizing Stories and Discussions:** The next step is summarizing the main stories and discussions, and LLMs come to the rescue again.
 

@@ -1,1 +1,345 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Effective delegation by visioneering | Yew Jin</title> <meta name="author" content="Yew Jin Lim"> <meta name="description" content="Visioneering is such a great word"> <meta name="keywords" content="Yew Jin, Yewjin, Yew Jin Lim, limyewjin, yewjinlim, yewjin.eth"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css"> <link rel="canonical" href="https://www.yewjin.com/blog/2022/visioneering/"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark"> <script src="/assets/js/theme.js"></script> <script src="/assets/js/dark_mode.js"></script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/">Yew Jin</a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about</a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications</a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fas fa-moon"></i> <i class="fas fa-sun"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5"> <div class="post"> <header class="post-header"> <h1 class="post-title">Effective delegation by visioneering</h1> <p class="post-meta">June 19, 2022</p> <p class="post-tags"> <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a> </p> </header> <article class="post-content"> <p>As a software engineering manager and a growing slate and scale of projects to lead, I have made delegation decisions largely based on intuition or just observing what other managers were doing.</p> <p>Sure, there are management books which espouse theory, but let’s be honest — they make it sound more complicated than it needs to be, and I read them, but I just didn’t grok them. Take this this gem about <a href="https://en.wikipedia.org/wiki/Goal_setting#In_business" rel="external nofollow noopener" target="_blank">goal setting in business</a>:</p> <blockquote> <p>In business, goal setting encourages participants to put in substantial effort. Also, because every member has defined expectations for their role, little room is left for inadequate, marginal effort to go unnoticed.</p> <p>Managers cannot constantly drive motivation, or keep track of an employee’s work on a continuous basis. Goals are therefore an important tool for managers, since goals have the ability to function as a self-regulatory mechanism that helps employees prioritize tasks.</p> </blockquote> <p>This doesn’t help me though: I need a playbook with specifics on how to structure and delegate effectively for software engineering projects that somehow relate back to the theory. How exactly do you go about this?</p> <p>Here’s my take: <em>visioneering</em>.</p> <h1 id="visioneering">Visioneering</h1> <p>I loosely define visioneering as the series of actions to take to build up a shared vision and long term goals for the team. At its core, visioneering consists of three parts:</p> <p>1 Defining a desirable and attainable goal 2 Communicating and getting consensus on the goal 3 Empowering teammates to achieve that goal</p> <h2 id="1-defining-a-desirable-and-attainable-goal">1. Defining a desirable and attainable goal</h2> <p>Setting challenging yet attainable goals with high impact. As a line manager, the goal given might be quite specific — “Get accuracy to at least 90%” or “Build a deployable system that does X, Y, and Z”. But even with such specifics there is often still large components to design and implement.</p> <p>As a director where you are given larger areas of focus, your goal is to set the direction of the project and team — “We will build a better ranking system by first scaling our data collection pipeline and building a robust evaluation metrics”.</p> <p>You should spend enough time to have a coherent topline goal, and to move onto the next step of communicating the goal, perhaps with the more senior members of the team at first, and to come back to refining your goal as you get more inputs and insights from others.</p> <h2 id="2-communicating-and-getting-consensus-on-the-goal">2. Communicating and getting consensus on the goal</h2> <p>A good rule of thumb as a manager is that you can’t never over-communicate. Even if you think you are repeating the same goal too many times, you would be surprised at how teammates appreciate being engaged in discussions about goals multiple times as they develop different perspectives over time. This is particularly true for big pivots in directions.</p> <p>In my experience, as the scope of the goal becomes more abstract, more of the effort should be spent discussing on why the goal is important. This is because with specificity engineers tend to gravitate towards problem-solving immediately, as opposed to more abstract goals which invite questions. (*)</p> <p>(*) Correlation is not causation of course, and another plausible explanation is that having larger scope problems correlates with higher level thinking and working with more senior engineers who tend to be better at questioning the whys of projects.</p> <p>There are three specific ways I like to communicate goals: A) one-pagers, B) presentations, and C) in-person discussions.</p> <p>A) One-pagers: Write down your ideas and goals in prose concisely. This helps both the recipient (short and sweet summary), and yourself (collect your thoughts).</p> <p>B) Presentations: Communicates your thoughts effectively in a group setting, also good to have presentations which are easily shared with partners and leadership to convey expectations. (Let’s be honest, the pointy-heads aren’t going to read your one-pagers)</p> <p>C) In-person discussions: Nothing beats face-to-face discussions to solicit honest and useful feedback.</p> <h2 id="3-empowering-teammates-to-achieve-that-goal">3. Empowering teammates to achieve that goal</h2> <p>If the scope of the project is small enough, implementation can start immediately, but once the project grows to an effort requiring a team over multiple weeks or months, this is where I would have called “delegation” previously would start as an external observer.</p> <p>Here’s my heuristic: you ask your team (or specific individuals) to write down how they are going to achieve the end goal (e.g., a design doc). And in fact if the project is still large enough, it could even be another visioneering task for them.</p> <p>Why do this? <a href="https://en.wikipedia.org/wiki/Goal_setting#Employee_motivation" rel="external nofollow noopener" target="_blank">Goal-commitment</a>:</p> <blockquote> <p>Goal-commitment, the most influential moderator, becomes especially important when dealing with difficult or complex goals. If people lack commitment to goals, they lack motivation to reach them. To commit to a goal, one must believe in its importance or significance.</p> </blockquote> <p>By writing down in a document the ideas and steps, the team member feels more ownership of the process, and there should be processes in the organization that allow the design document to be shared internally so that it gets reviewed by others. This also empowers the teammate to get agreement on the next steps and allows for more effective implementation.</p> </article> </div> </div> <footer class="fixed-bottom"> <div class="container mt-0"> © Copyright 2023 Yew Jin Lim. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: July 29, 2023. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script> <script defer src="/assets/js/masonry.js" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js"></script> <script defer src="/assets/js/common.js"></script> <script type="text/javascript">window.MathJax={tex:{tags:"ams"}};</script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script> <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script type="text/javascript">function progressBarSetup(){"max"in document.createElement("progress")?(initializeProgressElement(),$(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),$(window).on("resize",initializeProgressElement)):(resizeProgressBar(),$(document).on("scroll",resizeProgressBar),$(window).on("resize",resizeProgressBar))}function getCurrentScrollPosition(){return $(window).scrollTop()}function initializeProgressElement(){let e=$("#navbar").outerHeight(!0);$("body").css({"padding-top":e}),$("progress-container").css({"padding-top":e}),progressBar.css({top:e}),progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})}function getDistanceToScroll(){return $(document).height()-$(window).height()}function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}const progressBar=$("#progress");window.onload=function(){setTimeout(progressBarSetup,50)};</script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Effective delegation by visioneering | Yew Jin</title>
+    <meta name="author" content="Yew Jin  Lim">
+    <meta name="description" content="Visioneering is such a great word">
+    <meta name="keywords" content="Yew Jin, Yewjin, Yew Jin Lim, limyewjin, yewjinlim, yewjin.eth">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.yewjin.com/blog/2022/visioneering/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Yew Jin</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Effective delegation by visioneering</h1>
+    <p class="post-meta">June 19, 2022</p>
+    <p class="post-tags">
+      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>As a software engineering manager and a growing slate and scale of projects to lead, I have made delegation decisions largely based on intuition or just observing what other managers were doing.</p>
+
+<p>Sure, there are management books which espouse theory, but let’s be honest — they make it sound more complicated than it needs to be, and I read them, but I just didn’t grok them. Take this this gem about <a href="https://en.wikipedia.org/wiki/Goal_setting#In_business" rel="external nofollow noopener" target="_blank">goal setting in business</a>:</p>
+<blockquote>
+  <p>In business, goal setting encourages participants to put in substantial effort. Also, because every member has defined expectations for their role, little room is left for inadequate, marginal effort to go unnoticed.</p>
+
+  <p>Managers cannot constantly drive motivation, or keep track of an employee’s work on a continuous basis. Goals are therefore an important tool for managers, since goals have the ability to function as a self-regulatory mechanism that helps employees prioritize tasks.</p>
+</blockquote>
+
+<p>This doesn’t help me though: I need a playbook with specifics on how to structure and delegate effectively for software engineering projects that somehow relate back to the theory. How exactly do you go about this?</p>
+
+<p>Here’s my take: <em>visioneering</em>.</p>
+
+<h1 id="visioneering">Visioneering</h1>
+<p>I loosely define visioneering as the series of actions to take to build up a shared vision and long term goals for the team. At its core, visioneering consists of three parts:</p>
+
+<p>1 Defining a desirable and attainable goal
+  2 Communicating and getting consensus on the goal
+  3 Empowering teammates to achieve that goal</p>
+
+<h2 id="1-defining-a-desirable-and-attainable-goal">1. Defining a desirable and attainable goal</h2>
+<p>Setting challenging yet attainable goals with high impact. As a line manager, the goal given might be quite specific — “Get accuracy to at least 90%” or “Build a deployable system that does X, Y, and Z”. But even with such specifics there is often still large components to design and implement.</p>
+
+<p>As a director where you are given larger areas of focus, your goal is to set the direction of the project and team — “We will build a better ranking system by first scaling our data collection pipeline and building a robust evaluation metrics”.</p>
+
+<p>You should spend enough time to have a coherent topline goal, and to move onto the next step of communicating the goal, perhaps with the more senior members of the team at first, and to come back to refining your goal as you get more inputs and insights from others.</p>
+
+<h2 id="2-communicating-and-getting-consensus-on-the-goal">2. Communicating and getting consensus on the goal</h2>
+<p>A good rule of thumb as a manager is that you can’t never over-communicate. Even if you think you are repeating the same goal too many times, you would be surprised at how teammates appreciate being engaged in discussions about goals multiple times as they develop different perspectives over time. This is particularly true for big pivots in directions.</p>
+
+<p>In my experience, as the scope of the goal becomes more abstract, more of the effort should be spent discussing on why the goal is important. This is because with specificity engineers tend to gravitate towards problem-solving immediately, as opposed to more abstract goals which invite questions. (*)</p>
+
+<p>(*) Correlation is not causation of course, and another plausible explanation is that having larger scope problems correlates with higher level thinking and working with more senior engineers who tend to be better at questioning the whys of projects.</p>
+
+<p>There are three specific ways I like to communicate goals: A) one-pagers, B) presentations, and C) in-person discussions.</p>
+
+<p>A) One-pagers: Write down your ideas and goals in prose concisely. This helps both the recipient (short and sweet summary), and yourself (collect your thoughts).</p>
+
+<p>B) Presentations: Communicates your thoughts effectively in a group setting, also good to have presentations which are easily shared with partners and leadership to convey expectations. (Let’s be honest, the pointy-heads aren’t going to read your one-pagers)</p>
+
+<p>C) In-person discussions: Nothing beats face-to-face discussions to solicit honest and useful feedback.</p>
+
+<h2 id="3-empowering-teammates-to-achieve-that-goal">3. Empowering teammates to achieve that goal</h2>
+<p>If the scope of the project is small enough, implementation can start immediately, but once the project grows to an effort requiring a team over multiple weeks or months, this is where I would have called “delegation” previously would start as an external observer.</p>
+
+<p>Here’s my heuristic: you ask your team (or specific individuals) to write down how they are going to achieve the end goal (e.g., a design doc). And in fact if the project is still large enough, it could even be another visioneering task for them.</p>
+
+<p>Why do this? <a href="https://en.wikipedia.org/wiki/Goal_setting#Employee_motivation" rel="external nofollow noopener" target="_blank">Goal-commitment</a>:</p>
+<blockquote>
+  <p>Goal-commitment, the most influential moderator, becomes especially important when dealing with difficult or complex goals. If people lack commitment to goals, they lack motivation to reach them. To commit to a goal, one must believe in its importance or significance.</p>
+</blockquote>
+
+<p>By writing down in a document the ideas and steps, the team member feels more ownership of the process, and there should be processes in the organization that allow the design document to be shared internally so that it gets reviewed by others. This also empowers the teammate to get agreement on the next steps and allows for more effective implementation.</p>
+
+  </article>
+
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/a-podcast-just-for-you/">A Podcast for You! And You! And You!</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/llm/">How LLM, Generative AI Image/Video, and Blockchain will Change the World in the Next 3 Years</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/web3-creator/">Learning as a Web3 creator</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/crypto-thoughts/">Crypto Thoughts</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/crypto-cyberops/">Crypto Cyberops</a>
+  </li>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2023 Yew Jin  Lim. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+Last updated: July 29, 2023.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>

@@ -5,8 +5,6 @@ title: A Podcast for You! And You! And You!
 date: 2023-07-29 08:00:00
 description: One small step for how LLMs are going to change your world
 ---
-# A Podcast for You! And You! And You!
-
 Imagine starting your day with a tailored podcast, containing summarized stories from various newspapers and websites that you care about. With advances in LLMs and Text-to-Speech, it is now possible to automate this process. Let's explore how to leverage AI to curate, summarize, and transform online stories into personalized podcasts.
 
 To start, here's a sample podcast created on July 29, 2023.

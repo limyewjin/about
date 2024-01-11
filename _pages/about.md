@@ -37,5 +37,3 @@ _YJ_: "Yes, I am Yew Lim."
 
 # Links
 All about the links at [linktr.ee/yewjin](https://linktr.ee/yewjin)
-
-provenaa5543

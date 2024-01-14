@@ -106,6 +106,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 contact_note: >
   Contacting me? Send me an email or tweet!
 
+google_analytics: G-9F9FDD9BNF
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
@@ -331,7 +332,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false  # enables google analytics
+enable_google_analytics:    true # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification

@@ -36,11 +36,11 @@ Handy number of slots in various time periods
 
 ## Probabilities for 1 Validator
 
-- **Probability of not proposing a block in one slot:** $$ \( 1 - \frac{1}{905,000} \) $$
-- **One Hour (300 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{300} \) $$
-- **One Day (7,200 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{7200} \) $$
-- **One Week (50,400 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{50400} \) $$
-- **One Month (approx. 30 days, 216,000 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{216000} \) $$
+- **Probability of not proposing a block in one slot:** $$ 1 - \frac{1}{905,000} $$
+- **One Hour (300 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{300} $$
+- **One Day (7,200 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{7200} $$
+- **One Week (50,400 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{50400} $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{216000} $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 99.97%
@@ -51,11 +51,11 @@ Handy number of slots in various time periods
 
 ## Probabilities for 100 Validators
 
-- **Probability of not proposing a block in one slot (for any of the 100 validators):** $$ \( 1 - \frac{100}{905,000} \) $$
-- **One Hour (300 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{300} \) $$
-- **One Day (7,200 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{7200} \) $$
-- **One Week (50,400 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{50400} \) $$
-- **One Month (approx. 30 days, 216,000 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{216000} \) $$
+- **Probability of not proposing a block in one slot (for any of the 100 validators):** $$ 1 - \frac{100}{905,000} $$
+- **One Hour (300 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{300} $$
+- **One Day (7,200 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{7200} $$
+- **One Week (50,400 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{50400} $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{216000} $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 96.74%

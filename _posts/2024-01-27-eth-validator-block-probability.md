@@ -29,10 +29,10 @@ Probability (T Slots) = (1 - (V / N))^T
 
 Handy number of slots in various time periods
 
-- **For One Hour**: With T = 300 slots (assuming 12 seconds per slot).
-- **For One Day**: T = 7,200 slots.
-- **For One Week**: T = 50,400 slots.
-- **For One Month**: Approximating a month as 30 days, T = 216,000 slots.
+- **For One Hour:** With T = 300 slots (assuming 12 seconds per slot).
+- **For One Day:** T = 7,200 slots.
+- **For One Week:** T = 50,400 slots.
+- **For One Month:** Approximating a month as 30 days, T = 216,000 slots.
 
 ## Probabilities for 1 Validator
 
@@ -47,7 +47,9 @@ Handy number of slots in various time periods
 - **Chance of not proposing a block in one day:** Approximately 99.21%
 - **Chance of not proposing a block in one week:** Approximately 94.58%
 - **Chance of not proposing a block in one month:** Approximately 78.75%
-
+- **Chance of not proposing a block in 3 months:** Approximately 48.84%
+- **Chance of not proposing a block in 6 months:** Approximately 23.86%
+- **Chance of not proposing a block in 1 year:** Approximately 5.69%
 
 ## Probabilities for 100 Validators
 

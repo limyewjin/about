@@ -7,7 +7,7 @@ description: When your solo staking setup isn't proposing, you are asking "WHAT 
 ---
 As an Ethereum staker, one of the key aspects of participation in the network is decentralization ... OK ... nevermind it's the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here's how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month.
 
-Before diving into the calculations, it's important to understand some basics. The Ethereum 2.0 protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of validators.
+The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of validators.
 
 1. **Total Number of Validators (N):** The entire set of validators staking ETH in the network. You can use [validatorqueue.com](https://www.validatorqueue.com/) but as of Jan 27 2024, it's around 905,000.
 2. **Your Validators (V):** The number of validators under your control.
@@ -29,18 +29,18 @@ Probability (T Slots) = (1 - (V / N))^T
 
 Handy number of slots in various time periods
 
-**For One Hour**: With T = 300 slots (assuming 12 seconds per slot).
-**For One Day**: T = 7,200 slots.
-**For One Week**: T = 50,400 slots.
-**For One Month**: Approximating a month as 30 days, T = 216,000 slots.
+- **For One Hour**: With T = 300 slots (assuming 12 seconds per slot).
+- **For One Day**: T = 7,200 slots.
+- **For One Week**: T = 50,400 slots.
+- **For One Month**: Approximating a month as 30 days, T = 216,000 slots.
 
 ## Probabilities for 1 Validator
 
-- **Probability of not proposing a block in one slot:** \( 1 - \frac{1}{905,000} \)
-- **One Hour (300 slots):** \( \left( 1 - \frac{1}{905,000} \right)^{300} \)
-- **One Day (7,200 slots):** \( \left( 1 - \frac{1}{905,000} \right)^{7200} \)
-- **One Week (50,400 slots):** \( \left( 1 - \frac{1}{905,000} \right)^{50400} \)
-- **One Month (approx. 30 days, 216,000 slots):** \( \left( 1 - \frac{1}{905,000} \right)^{216000} \)
+- **Probability of not proposing a block in one slot:** $$ \( 1 - \frac{1}{905,000} \) $$
+- **One Hour (300 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{300} \) $$
+- **One Day (7,200 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{7200} \) $$
+- **One Week (50,400 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{50400} \) $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \( \left( 1 - \frac{1}{905,000} \right)^{216000} \) $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 99.97%
@@ -51,11 +51,11 @@ Handy number of slots in various time periods
 
 ## Probabilities for 100 Validators
 
-- **Probability of not proposing a block in one slot (for any of the 100 validators):** \( 1 - \frac{100}{905,000} \)
-- **One Hour (300 slots):** \( \left( 1 - \frac{100}{905,000} \right)^{300} \)
-- **One Day (7,200 slots):** \( \left( 1 - \frac{100}{905,000} \right)^{7200} \)
-- **One Week (50,400 slots):** \( \left( 1 - \frac{100}{905,000} \right)^{50400} \)
-- **One Month (approx. 30 days, 216,000 slots):** \( \left( 1 - \frac{100}{905,000} \right)^{216000} \)
+- **Probability of not proposing a block in one slot (for any of the 100 validators):** $$ \( 1 - \frac{100}{905,000} \) $$
+- **One Hour (300 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{300} \) $$
+- **One Day (7,200 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{7200} \) $$
+- **One Week (50,400 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{50400} \) $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \( \left( 1 - \frac{100}{905,000} \right)^{216000} \) $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 96.74%

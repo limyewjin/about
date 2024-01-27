@@ -64,3 +64,5 @@ Handy number of slots in various time periods
 - **Chance of not proposing a block in one day:** Approximately 45.10%
 - **Chance of not proposing a block in one week:** Approximately 0.38%
 - **Chance of not proposing a block in one month:** Practically 0% (very close to zero)
+
+Finally, this is a simple model yada yada (technically you should look at effective validator balances), if you want to see the latest's statistics on block proposal frequency, see [LuckyStaker.com](https://luckystaker.com/home/)

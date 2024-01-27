@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>How LLM, Generative AI Image/Video, and Blockchain will Change the World in the Next 3 Years | Yew Jin</title>
+    <title>Estimating the Probability of Not Proposing an Ethereum Block | Yew Jin</title>
     <meta name="author" content="Yew Jin  Lim">
-    <meta name="description" content="LLM, Generative AI Art, and Blockchain are going to change the world">
+    <meta name="description" content="When your solo staking setup isn't proposing, you are asking " what are the odds>
     <meta name="keywords" content="Yew Jin, Yewjin, Yew Jin Lim, limyewjin, yewjinlim, yewjin.eth">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://www.yewjin.com/blog/2023/llm/">
+    <link rel="canonical" href="https://www.yewjin.com/blog/2024/eth-validator-block-probability/">
     
     <!-- Dark Mode -->
     
@@ -109,68 +109,100 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">How LLM, Generative AI Image/Video, and Blockchain will Change the World in the Next 3 Years</h1>
-    <p class="post-meta">January 16, 2023</p>
+    <h1 class="post-title">Estimating the Probability of Not Proposing an Ethereum Block</h1>
+    <p class="post-meta">January 27, 2024</p>
     <p class="post-tags">
-      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
 
     </p>
   </header>
 
   <article class="post-content">
-    <h1 id="how-llm-generative-ai-and-blockchain-are-going-to-change-the-world-in-the-next-3-years">How LLM, Generative AI, and Blockchain are Going to Change the World in the Next 3 Years</h1>
+    <p>As an Ethereum staker, one of the key aspects of participation in the network is decentralization … OK … nevermind it’s the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here’s how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month.</p>
 
-<p>It’s often said that the world changes more in the next 10 years than it has in the last 10 years. This rings especially true with the rapid development of technology like LLM (Large Language Models), Generative AI image/video generation, and blockchain. In the next three years, these technologies are likely to change the world more than it has in the past 10 years.</p>
+<p>Before diving into the calculations, it’s important to understand some basics. The Ethereum 2.0 protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of validators.</p>
 
-<p>However, these technologies aren’t made equally. They often work together to create a larger impact on the world, with each technology reinforcing the positive effects of another. They also often have a negative side, making the effects of the other technologies worse.</p>
+<ol>
+  <li>
+<strong>Total Number of Validators (N):</strong> The entire set of validators staking ETH in the network. You can use <a href="https://www.validatorqueue.com/" rel="external nofollow noopener" target="_blank">validatorqueue.com</a> but as of Jan 27 2024, it’s around 905,000.</li>
+  <li>
+<strong>Your Validators (V):</strong> The number of validators under your control.</li>
+  <li>
+<strong>Time Period (T):</strong> The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)</li>
+</ol>
 
-<p>In this post, we’ll discuss the potential impact of these technologies, as well as their potential shortcomings. We’ll focus on LLMs, generative AI image/video generation, and blockchain.</p>
+<h3 id="calculating-the-probability">Calculating the Probability</h3>
 
-<h2 id="llms-large-language-models">LLMs (Large Language Models)</h2>
+<p>The probability of not proposing a block in a single slot, for a user with V validators, is calculated as follows:</p>
 
-<p>Steve Jobs famously said that the computer is a “bicycle for the mind”–a tool to make humans more efficient in writing. LLMs, or Large Language Models, are the acceleration of the bicycle for the mind. LLMs allow humans to write more quickly and eloquently than ever before by relying on AI assistance.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Probability (Single Slot) = 1 - (V / N)
+</code></pre></div></div>
 
-<p>The best writing won’t be entirely written by AI, however. It’ll be a collaboration between human and AI, with humans relying on AI to help them write better and faster. But this collaboration has its drawbacks, like the potential for cheating, and more effective misinformation.</p>
+<p>To extend this to a specific time period, T slots, the formula becomes:</p>
 
-<h3 id="potential-for-cheating">Potential for Cheating</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Probability (T Slots) = (1 - (V / N))^T
+</code></pre></div></div>
 
-<p>Cheating will be easier than ever before with LLMs. Students will be able to rely on LLMs to help them quickly write essays for their homework or school assignments. Similarly, students may be able to use LLMs to help them write exams and homework.</p>
+<p>Handy number of slots in various time periods</p>
 
-<p>What happens when LLMs become too effective at writing? It’ll be harder to find the best writers, and it’ll be harder to distinguish between good and bad writers. LLMs that can write will also make it easier to write quality text quickly, making it harder to detect cheating even when a student uses an LLM to help them write.</p>
+<p><strong>For One Hour</strong>: With T = 300 slots (assuming 12 seconds per slot).
+<strong>For One Day</strong>: T = 7,200 slots.
+<strong>For One Week</strong>: T = 50,400 slots.
+<strong>For One Month</strong>: Approximating a month as 30 days, T = 216,000 slots.</p>
 
-<h3 id="more-effective-misinformation">More Effective Misinformation</h3>
+<h2 id="probabilities-for-1-validator">Probabilities for 1 Validator</h2>
 
-<p>Misinformation is information that’s false, but usually presented in a manner that appears true to the uninformed reader. Those who are misinformed are often aware that the information is false, but deliberately present it as if it’s true. This can cause people to believe the information and act on it, even if it’s wrong.</p>
+<ul>
+  <li>
+<strong>Probability of not proposing a block in one slot:</strong> ( 1 - \frac{1}{905,000} )</li>
+  <li>
+<strong>One Hour (300 slots):</strong> ( \left( 1 - \frac{1}{905,000} \right)^{300} )</li>
+  <li>
+<strong>One Day (7,200 slots):</strong> ( \left( 1 - \frac{1}{905,000} \right)^{7200} )</li>
+  <li>
+<strong>One Week (50,400 slots):</strong> ( \left( 1 - \frac{1}{905,000} \right)^{50400} )</li>
+  <li>
+<strong>One Month (approx. 30 days, 216,000 slots):</strong> ( \left( 1 - \frac{1}{905,000} \right)^{216000} )</li>
+</ul>
 
-<p>For example, a politician may want to spread false information about their opponent to convince people that their opponent is dishonest. In this scenario, it’s likely that the politician is aware that the information is false, but will spread it anyway because it benefits them.</p>
+<h3 id="summary">Summary</h3>
+<ul>
+  <li>
+<strong>Chance of not proposing a block in one hour:</strong> Approximately 99.97%</li>
+  <li>
+<strong>Chance of not proposing a block in one day:</strong> Approximately 99.21%</li>
+  <li>
+<strong>Chance of not proposing a block in one week:</strong> Approximately 94.58%</li>
+  <li>
+<strong>Chance of not proposing a block in one month:</strong> Approximately 78.75%</li>
+</ul>
 
-<p>Misinformation has always been a problem. Misinformation has never been more effective or easy to create than it is now, with the help of writing AI.</p>
+<h2 id="probabilities-for-100-validators">Probabilities for 100 Validators</h2>
 
-<p>For example, a politician may use writing AI to write text that they can use to mislead the public. This text will be written in a way that sounds accurate and believable to the reader, making it harder to disprove or refute.</p>
+<ul>
+  <li>
+<strong>Probability of not proposing a block in one slot (for any of the 100 validators):</strong> ( 1 - \frac{100}{905,000} )</li>
+  <li>
+<strong>One Hour (300 slots):</strong> ( \left( 1 - \frac{100}{905,000} \right)^{300} )</li>
+  <li>
+<strong>One Day (7,200 slots):</strong> ( \left( 1 - \frac{100}{905,000} \right)^{7200} )</li>
+  <li>
+<strong>One Week (50,400 slots):</strong> ( \left( 1 - \frac{100}{905,000} \right)^{50400} )</li>
+  <li>
+<strong>One Month (approx. 30 days, 216,000 slots):</strong> ( \left( 1 - \frac{100}{905,000} \right)^{216000} )</li>
+</ul>
 
-<h2 id="generative-ai-art">Generative AI Art</h2>
-
-<p>Generative AI image generation is advancing rapidly, and generative AI video generation is inevitable. With these technologies, we will have higher quality images and videos, as well as more efficient ways to create content. Still, many people will rely on AI to create content, and this is where AI’s relentless ability to scale and produce a large amount of information will overwhelm our current systems. For example, AI models are currently being used to create art that’s similar to a specific artist’s style, or an individual person’s style.</p>
-
-<p>This may sound like fiction, but it’s actually happening now. Tools like DALL-E 2, Stable Diffusion, Midjourney, etc. showed that AI models are able to create images that are similar to an individual artist’s style, or an individual person’s style. These models can also create art that’s similar to a specific artist’s style, or an individual person’s style.</p>
-
-<h2 id="what-systems-are-being-overwhelmed">What Systems are Being Overwhelmed?</h2>
-
-<p>Still, many people will rely on AI to create content, and this is where AI’s relentless ability to scale and produce a large amount of information will overwhelm our current systems.</p>
-
-<p>The cultural and economic systems are likely to be particularly affected. The debate around AI art stealing from existing artists is analogous to human artists being inspired by works of art that they see and learn from. This raises the question of whether this type of “standing on the shoulders of giants” works when AI does it.</p>
-
-<p>The current digital copyright systems are also likely to be overwhelmed. Digital media can easily be copied and redistributed, making it more difficult to control the spread of digital media. This can lead to the devaluation of original artwork and the potential for more legal disputes over the ownership of digital media.</p>
-
-<h3 id="the-increasing-need-for-scalable-digital-ownership">The Increasing Need for Scalable Digital Ownership</h3>
-
-<p>As LLMs and generative AI become more advanced, the need for scalable digital ownership will become increasingly critical. Blockchain technology, via Non-Fungible Tokens (NFTs), provides a viable solution, as it allows digital content to be securely tracked and buy and sold. This would help protect original creators from losing out on potential profits from their artwork, and would also reduce the amount of legal disputes over the ownership of digital media.</p>
-
-<p>NFTs provides a way to prove ownership and authorship of digital content, allowing creators to monetize their work. This can also help reduce the potential for cheating and misinformation, as the provenance of content can be verified. Additionally, this could help reduce the amount of digital theft since digital media can be tracked and traced to its original owner. Finally, it could also lead to new economic models, as digital content can be securely bought, sold, and traded with ease.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>In the next three years, the world is likely to change more than it has in the past 10 years due to the rapid development of LLMs, generative AI, and blockchain. LLMs allow humans to write more quickly and eloquently, while generative AI image and video generation is likely to improve the quality of digital media. Blockchains and NFTs will help reduce digital theft and create a secure way of proving digital ownership. All of these technologies are likely to overwhelm our current systems, leading to a cultural and economic revolution where these technologies work together to create a new ecosystem to support the industry.</p>
+<h3 id="summary-1">Summary</h3>
+<ul>
+  <li>
+<strong>Chance of not proposing a block in one hour:</strong> Approximately 96.74%</li>
+  <li>
+<strong>Chance of not proposing a block in one day:</strong> Approximately 45.10%</li>
+  <li>
+<strong>Chance of not proposing a block in one week:</strong> Approximately 0.38%</li>
+  <li>
+<strong>Chance of not proposing a block in one month:</strong> Practically 0% (very close to zero)</li>
+</ul>
 
   </article>
 
@@ -188,12 +220,6 @@
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/eth-validator-block-probability/">Estimating the Probability of Not Proposing an Ethereum Block</a>
-  </li>
-
-  
-
-  <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/nailed-that-one/">Nailed that one</a>
   </li>
 
@@ -207,6 +233,12 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/a-podcast-just-for-you/">A Podcast for You! And You! And You!</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/llm/">How LLM, Generative AI Image/Video, and Blockchain will Change the World in the Next 3 Years</a>
   </li>
 
   

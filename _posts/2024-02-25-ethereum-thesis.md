@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Ethereum 2024 Thesis - Gen AI meets Crypto
+title: Ethereum 2024 Thesis: Gen AI meets Crypto
 date: 2024-02-25 08:00:00
 description: Gen AI + Ethereum: A (Potential) Match
 ---

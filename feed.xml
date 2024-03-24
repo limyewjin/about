@@ -1,5 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-17T19:13:39+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">How to execute on growth</title><link href="https://www.yewjin.com/blog/2024/how-to-execute-on-growth/" rel="alternate" type="text/html" title="How to execute on growth" /><published>2024-03-17T08:00:00+00:00</published><updated>2024-03-17T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/how-to-execute-on-growth</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/how-to-execute-on-growth/"><![CDATA[<p>As a big tech growth team lead, I’ve seen firsthand the impact that a growth mindset can have on an organization’s success. I have thought more than I care to admit about the key principles and strategies that can help unlock sustainable growth - here they are:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-24T17:59:18+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">For growth’s sake, don’t be dogmatic</title><link href="https://www.yewjin.com/blog/2024/do-not-dogmatic/" rel="alternate" type="text/html" title="For growth’s sake, don’t be dogmatic" /><published>2024-03-24T08:00:00+00:00</published><updated>2024-03-24T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/do-not-dogmatic</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/do-not-dogmatic/"><![CDATA[<p>I am reading <a href="https://g.co/kgs/mVUfke">Build: An Unorthodox Guide to Making Things Worth Making Book</a> zby Tony Fadell -</p>
+
+<p>I wanted to call out Tony’s description on how to make a big change:</p>
+
+<blockquote>
+  <p>A company that’s likely to make a substantial change in the status quo has the following characteristics:</p>
+
+  <ol>
+    <li>
+      <p>It’s creating a product or service that’s wholly new or combines existing technology in a novel way that the competition can’t make or even understand.</p>
+    </li>
+    <li>
+      <p>This product solves a problem—a real pain point-that a lot of customers experience daily. There should be an existing large market.</p>
+    </li>
+    <li>
+      <p>The novel technology can deliver on the company vision-not just within the product but also the infrastructure, platforms, and systems that support it.</p>
+    </li>
+  </ol>
+
+  <p><em>4. Leadership is not dogmatic about what the solution looks like and is willing to adapt to their customers’ needs</em>.</p>
+
+  <ol>
+    <li>It’s thinking about a problem or a customer need in a way you’ve never heard before, but which makes perfect sense once you hear it.</li>
+  </ol>
+</blockquote>
+
+<p>I especially like the fourth point about not being dogmatic. This point is crucial because it emphasizes the importance of being humble and adaptable in the face of real-world feedback. As the Mike Tyson famously once said, “Everyone has a plan until they get punched in the face.” In my team I like to say: “Everyone has a Growth plan until they run their first live experiment.”</p>
+
+<p>It’s easy to fall in love with our own product vision and believe that we know exactly what our users need. However, the reality is that our assumptions are often wrong or incomplete. Only by putting our products in front of real users and gathering feedback can we truly understand what works and what doesn’t.</p>
+
+<p>Be humble. This doesn’t mean abandoning our vision altogether, but rather being open to tweaking and refining it based on real-world insights. The most successful products are those that strike a balance between a strong vision and a willingness to iterate based on user feedback. This requires a leadership team that is confident enough to set a direction, but humble enough to admit when they need to course-correct (and knowing when to do so quickly!)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I prefer live experiments over getting punched in the face]]></summary></entry><entry><title type="html">How to execute on growth</title><link href="https://www.yewjin.com/blog/2024/how-to-execute-on-growth/" rel="alternate" type="text/html" title="How to execute on growth" /><published>2024-03-17T08:00:00+00:00</published><updated>2024-03-17T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/how-to-execute-on-growth</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/how-to-execute-on-growth/"><![CDATA[<p>As a big tech growth team lead, I’ve seen firsthand the impact that a growth mindset can have on an organization’s success. I have thought more than I care to admit about the key principles and strategies that can help unlock sustainable growth - here they are:</p>
 
 <h1 id="small-g-and-big-g-growth-is-not-growth">small g and big G: growth is not Growth</h1>
 <ul>
@@ -295,15 +325,4 @@
       <li>Nouns?</li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[As I am writing this blog post #cryptocrash is tredning on Twitter. ETH is at $1300 and BTC is at $18,800. This isn’t looking good to say the least, but I figure I will write down my thesis as a matter of financial discipline.]]></summary></entry><entry><title type="html">Crypto Cyberops</title><link href="https://www.yewjin.com/blog/2022/crypto-cyberops/" rel="alternate" type="text/html" title="Crypto Cyberops" /><published>2022-08-04T08:00:00+00:00</published><updated>2022-08-04T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2022/crypto-cyberops</id><content type="html" xml:base="https://www.yewjin.com/blog/2022/crypto-cyberops/"><![CDATA[<p>Here’s my multifactor way to store your crypto safely with a break glass scenario for emergencies:</p>
-
-<p>Use <a href="https://gnosis-safe.io/">Gnosis Safe</a> to manage a multi-sig wallet secured by multiple hardware wallets like those from <a href="https://www.ledger.com/">Ledger</a>, <a href="https://gridplus.io/products/grid-lattice1">Grid+ Lattice1</a>, and <a href="https://trezor.io/">Trezor</a>.</p>
-
-<p>Next, secure your hardware wallets with the following protocol:</p>
-<ol>
-  <li>Use steel plates/capsules to protect from physical events and degradation over time.</li>
-  <li>Utilize <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#from-mnemonic-to-seed">BIP39 passphrase</a> to require a password on top of the seed phrase.</li>
-  <li>Shamir’s secret sharing to shard seed phrases to store steel plates/capsules in multiple locations, and prevents any single discovery to be an issue like <a href="https://github.com/iancoleman/shamir39">Shamir39</a></li>
-</ol>
-
-<p>i.e., multisig wallet with the hardware wallets access to multiple factors with password/pins, and recovery of hardware wallets in case of hardware failure requires knowledge (BIP39 passphrase) on top of just physically recovering multiple seeds. The hardware wallets are somewhat optional but it can be a security risk itself to try and recover your private keys often.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Writing this down because the other liability is forgetting the protocol]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[As I am writing this blog post #cryptocrash is tredning on Twitter. ETH is at $1300 and BTC is at $18,800. This isn’t looking good to say the least, but I figure I will write down my thesis as a matter of financial discipline.]]></summary></entry></feed>

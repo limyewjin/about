@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-25T01:27:21+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">For growth’s sake, don’t be dogmatic</title><link href="https://www.yewjin.com/blog/2024/do-not-dogmatic/" rel="alternate" type="text/html" title="For growth’s sake, don’t be dogmatic" /><published>2024-03-24T08:00:00+00:00</published><updated>2024-03-24T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/do-not-dogmatic</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/do-not-dogmatic/"><![CDATA[<p>I am reading <a href="https://g.co/kgs/mVUfke">Build: An Unorthodox Guide to Making Things Worth Making Book</a> by Tony Fadell -</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-03T15:53:29+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Breaking down silos to grow</title><link href="https://www.yewjin.com/blog/2024/breaking-silos/" rel="alternate" type="text/html" title="Breaking down silos to grow" /><published>2024-04-03T08:00:00+00:00</published><updated>2024-04-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/breaking-silos</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/breaking-silos/"><![CDATA[<p>Here’s the thing: growth ideas often come from thinking outside the box and looking at the full complexity of the user flow, rather than getting stuck in the silos created by products, features, and org structures.</p>
+
+<p>Basically, no matter how you slice and dice your projects to optimize for Growth (capital G), the real growth (lowercase g) often lies in the seams between those projects and teams.</p>
+
+<p>Picture this: a widget company has a deals team that busts their posteriors to secure awesome Black Friday discounts. They even get those deals featured on the homepage. Sounds great, right? All those users flooding the site will see the deals and go wild!</p>
+
+<p>But wait, what about the email and notifications team? Shouldn’t they be crafting personalized updates and maybe even more exclusive deals for engaged users? And what about marketing? Are they on the same page with messaging, or will users get confused by mixed signals?</p>
+
+<p>In big companies, this kind of coordination doesn’t happen automagically. Teams often optimize for their own little fiefdoms without seeing the bigger picture.</p>
+
+<p>Now, decentralizing growth efforts is usually the secret to scaling. Trying to centralize everything just creates org friction and slows things down.</p>
+
+<p>But there are times when it’s worth the extra elbow grease to get everyone singing from the same hymnal. My rule of thumb? When there’s a tidal wave of users expected, like during Black Friday or the World Cup, it’s time to yell (figuratively!) and get all hands on deck.</p>
+
+<p>At the end of the day, growth is a team sport. By breaking down silos and looking at the big picture, you can find those hidden gems that really move the needle.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Doing growth is like finding coins between the couch cushions]]></summary></entry><entry><title type="html">For growth’s sake, don’t be dogmatic</title><link href="https://www.yewjin.com/blog/2024/do-not-dogmatic/" rel="alternate" type="text/html" title="For growth’s sake, don’t be dogmatic" /><published>2024-03-24T08:00:00+00:00</published><updated>2024-03-24T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/do-not-dogmatic</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/do-not-dogmatic/"><![CDATA[<p>I am reading <a href="https://g.co/kgs/mVUfke">Build: An Unorthodox Guide to Making Things Worth Making Book</a> by Tony Fadell -</p>
 
 <p>I wanted to call out Tony’s description on how to make a big change:</p>
 
@@ -312,17 +326,4 @@
 
 <p>Showtime.xyz mints NFTs on Polygon mainnet and gives them to users for free.</p>
 
-<p>To make the most of the platform, I have been thinking about how to organize my artwork so that it is attractive and also creates buzz. I have also created token-gated access to new content so that there is incentive for people to engage with my work. Check out <a href="https://showtime.xyz/yewjin">showtime.xyz/yewjin</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learning by doing]]></summary></entry><entry><title type="html">Crypto Thoughts</title><link href="https://www.yewjin.com/blog/2022/crypto-thoughts/" rel="alternate" type="text/html" title="Crypto Thoughts" /><published>2022-09-18T08:00:00+00:00</published><updated>2022-09-18T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2022/crypto-thoughts</id><content type="html" xml:base="https://www.yewjin.com/blog/2022/crypto-thoughts/"><![CDATA[<p>As I am writing this blog post #cryptocrash is tredning on Twitter. ETH is at $1300 and BTC is at $18,800. This isn’t looking good to say the least, but I figure I will write down my thesis as a matter of financial discipline.</p>
-
-<ul>
-  <li>ETH. Long-term bullish. Short-term confused.</li>
-  <li>BTC. Store of value.</li>
-  <li>APE. Yuga Labs ecosystem. Ugh on staking for ApeCoin.</li>
-  <li>NFTs - buy the bluechips. Leave it along.
-    <ul>
-      <li>Yuga Labs: BAYC, Punks, Otherside, MAYC, BAKC. In that order.</li>
-      <li>Moonbirds</li>
-      <li>Nouns?</li>
-    </ul>
-  </li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[As I am writing this blog post #cryptocrash is tredning on Twitter. ETH is at $1300 and BTC is at $18,800. This isn’t looking good to say the least, but I figure I will write down my thesis as a matter of financial discipline.]]></summary></entry></feed>
+<p>To make the most of the platform, I have been thinking about how to organize my artwork so that it is attractive and also creates buzz. I have also created token-gated access to new content so that there is incentive for people to engage with my work. Check out <a href="https://showtime.xyz/yewjin">showtime.xyz/yewjin</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learning by doing]]></summary></entry></feed>

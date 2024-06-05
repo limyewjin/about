@@ -5,28 +5,24 @@ title: Estimating the Probability of Not Proposing an Ethereum Block
 date: 2024-01-27 08:00:00
 description: When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"
 ---
-**Update(June 2024)**: In anticipation for Pectra update and [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251). Updated [plot](https://www.yewjin.com/assets/html/eth_block_probability.html) to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after this upgrade.
-
-**Update(May 2024)**: See pretty plot [yewjin.com/assets/html/eth_block_probability.html](https://www.yewjin.com/assets/html/eth_block_probability.html)
+**Update(June 2024)**: This blog post is updated regularly (ideally daily!) with the current eligible ETH value from the blockchain. In anticipation for Pectra update and [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251). Updated [plot](https://www.yewjin.com/assets/html/eth_block_probability.html) to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after this upgrade.
 
 As an Ethereum staker, one of the key aspects of participation in the network is decentralization ... OK ... nevermind it's the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here's how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month. Because, admit it, you are only asking this question after not getting a block proposal for that long and you are asking: "WHAT ARE THE ODDS?!"
 
-The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator, but for the sake of simple computations we will use the number of validators. See [Block Proposal (ethereum.org)](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/)
+The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See [Block Proposal (ethereum.org)](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/)
 
-1. **Total Number of Validators (N):** The entire set of validators staking ETH in the network. You can use [validatorqueue.com](https://www.validatorqueue.com/) but as of Jan 27 2024, it's around 905,000.
-2. **Your Validators (V):** The number of validators under your control.
+1. **Total Eligible ETH (N):** The total amount of eligible ETH in the network. As of 2024-06-05 08:29, it's approximately 32508697 ETH.
+2. **Your ETH (V):** The amount of ETH you have staked.
 3. **Time Period (T):** The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)
 
 ### Calculating the Probability
 
-The probability of not proposing a block in a single slot, for a user with V validators, is calculated as follows:
-
+The probability of not proposing a block in a single slot, for a user with V ETH, is calculated as follows:
 ```
 Probability (Single Slot) = 1 - (V / N)
 ```
 
 To extend this to a specific time period, T slots, the formula becomes:
-
 ```
 Probability (T Slots) = (1 - (V / N))^T
 ```
@@ -38,35 +34,32 @@ Handy number of slots in various time periods
 - **For One Week:** T = 50,400 slots.
 - **For One Month:** Approximating a month as 30 days, T = 216,000 slots.
 
-## Probabilities for 1 Validator
+## Probabilities for 32 ETH
 
-- **Probability of not proposing a block in one slot:** $$ 1 - \frac{1}{905,000} $$
-- **One Hour (300 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{300} $$
-- **One Day (7,200 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{7200} $$
-- **One Week (50,400 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{50400} $$
-- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{1}{905,000} \right)^{216000} $$
+- **Probability of not proposing a block in one slot:** $$ 1 - rac{32}{32508697} $$
+- **One Hour (300 slots):** $$ \left( 1 - rac{32}{32508697} ight)^{300} $$
+- **One Day (7,200 slots):** $$ \left( 1 - rac{32}{32508697} ight)^{7200} $$
+- **One Week (50,400 slots):** $$ \left( 1 - rac{32}{32508697} ight)^{50400} $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - rac{32}{32508697} ight)^{216000} $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 99.97%
-- **Chance of not proposing a block in one day:** Approximately 99.21%
-- **Chance of not proposing a block in one week:** Approximately 94.58%
-- **Chance of not proposing a block in one month:** Approximately 78.75%
-- **Chance of not proposing a block in 3 months:** Approximately 48.84%
-- **Chance of not proposing a block in 6 months:** Approximately 23.86%
-- **Chance of not proposing a block in 1 year:** Approximately 5.69%
+- **Chance of not proposing a block in one day:** Approximately 99.29%
+- **Chance of not proposing a block in one week:** Approximately 95.16%
+- **Chance of not proposing a block in one month:** Approximately 80.85%
 
-## Probabilities for 100 Validators
+## Probabilities for 3200 ETH
 
-- **Probability of not proposing a block in one slot (for any of the 100 validators):** $$ 1 - \frac{100}{905,000} $$
-- **One Hour (300 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{300} $$
-- **One Day (7,200 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{7200} $$
-- **One Week (50,400 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{50400} $$
-- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{100}{905,000} \right)^{216000} $$
+- **Probability of not proposing a block in one slot:** $$ 1 - rac{3200}{32508697} $$
+- **One Hour (300 slots):** $$ \left( 1 - rac{3200}{32508697} ight)^{300} $$
+- **One Day (7,200 slots):** $$ \left( 1 - rac{3200}{32508697} ight)^{7200} $$
+- **One Week (50,400 slots):** $$ \left( 1 - rac{3200}{32508697} ight)^{50400} $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - rac{3200}{32508697} ight)^{216000} $$
 
 ### Summary
-- **Chance of not proposing a block in one hour:** Approximately 96.74%
-- **Chance of not proposing a block in one day:** Approximately 45.10%
-- **Chance of not proposing a block in one week:** Approximately 0.38%
+- **Chance of not proposing a block in one hour:** Approximately 97.09%
+- **Chance of not proposing a block in one day:** Approximately 49.23%
+- **Chance of not proposing a block in one week:** Approximately 0.70%
 - **Chance of not proposing a block in one month:** Practically 0% (very close to zero)
 
-Finally, this is a simple model yada yada (technically you should look at effective validator balances), if you want to see the latest's statistics on block proposal frequency, see [LuckyStaker.com](https://luckystaker.com/home/)
+Finally, if you want to see the latest statistics on block proposal frequency, see [LuckyStaker.com](https://luckystaker.com/home/)

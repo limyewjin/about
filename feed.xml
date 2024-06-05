@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-05T12:32:03+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-05T15:30:13+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Breaking down silos to grow</title><link href="https://www.yewjin.com/blog/2024/breaking-silos/" rel="alternate" type="text/html" title="Breaking down silos to grow" /><published>2024-04-03T08:00:00+00:00</published><updated>2024-04-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/breaking-silos</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/breaking-silos/"><![CDATA[<p>Here’s the thing: growth ideas often come from thinking outside the box and looking at the full complexity of the user flow, rather than getting stuck in the silos created by products, features, and org structures.</p>
 
 <p>Basically, no matter how you slice and dice your projects to optimize for Growth (capital G), the real growth (lowercase g) often lies in the seams between those projects and teams.</p>
@@ -105,29 +105,25 @@
 
 <p>The intersection of generative AI and Ethereum presents a compelling narrative. With Ethereum, there’s potential to create a new economic model for AI, where creators are compensated through smart contracts, and AI-generated content and services are traded on a decentralized marketplace. This could pave the way for fairer, more transparent economic systems for digital content and services. Moreover, as AI continues to evolve, integrating with Ethereum could ensure that the creators and developers behind AI innovations are directly rewarded for their contributions, fostering a more sustainable ecosystem for digital innovation.</p>
 
-<p>I am cautiously optimistic, but the success of Ethereum feels like a matter of “when” rather than “if.” I’m betting it’s Gen AI-related.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Gen AI + Ethereum]]></summary></entry><entry><title type="html">Estimating the Probability of Not Proposing an Ethereum Block</title><link href="https://www.yewjin.com/blog/2024/eth-validator-block-probability/" rel="alternate" type="text/html" title="Estimating the Probability of Not Proposing an Ethereum Block" /><published>2024-01-27T08:00:00+00:00</published><updated>2024-01-27T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/eth-validator-block-probability</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/eth-validator-block-probability/"><![CDATA[<p><strong>Update(June 2024)</strong>: In anticipation for Pectra update and <a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a>. Updated <a href="https://www.yewjin.com/assets/html/eth_block_probability.html">plot</a> to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after this upgrade.</p>
-
-<p><strong>Update(May 2024)</strong>: See pretty plot <a href="https://www.yewjin.com/assets/html/eth_block_probability.html">yewjin.com/assets/html/eth_block_probability.html</a></p>
+<p>I am cautiously optimistic, but the success of Ethereum feels like a matter of “when” rather than “if.” I’m betting it’s Gen AI-related.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Gen AI + Ethereum]]></summary></entry><entry><title type="html">Estimating the Probability of Not Proposing an Ethereum Block</title><link href="https://www.yewjin.com/blog/2024/eth-validator-block-probability/" rel="alternate" type="text/html" title="Estimating the Probability of Not Proposing an Ethereum Block" /><published>2024-01-27T08:00:00+00:00</published><updated>2024-01-27T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/eth-validator-block-probability</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/eth-validator-block-probability/"><![CDATA[<p><strong>Update(June 2024)</strong>: This blog post is updated regularly (ideally daily!) with the current eligible ETH value from the blockchain. In anticipation for Pectra update and <a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a>. Updated <a href="https://www.yewjin.com/assets/html/eth_block_probability.html">plot</a> to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after this upgrade.</p>
 
 <p>As an Ethereum staker, one of the key aspects of participation in the network is decentralization … OK … nevermind it’s the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here’s how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month. Because, admit it, you are only asking this question after not getting a block proposal for that long and you are asking: “WHAT ARE THE ODDS?!”</p>
 
-<p>The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator, but for the sake of simple computations we will use the number of validators. See <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/">Block Proposal (ethereum.org)</a></p>
+<p>The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/">Block Proposal (ethereum.org)</a></p>
 
 <ol>
-  <li><strong>Total Number of Validators (N):</strong> The entire set of validators staking ETH in the network. You can use <a href="https://www.validatorqueue.com/">validatorqueue.com</a> but as of Jan 27 2024, it’s around 905,000.</li>
-  <li><strong>Your Validators (V):</strong> The number of validators under your control.</li>
+  <li><strong>Total Eligible ETH (N):</strong> The total amount of eligible ETH in the network. As of 2024-06-05 08:29, it’s approximately 32508697 ETH.</li>
+  <li><strong>Your ETH (V):</strong> The amount of ETH you have staked.</li>
   <li><strong>Time Period (T):</strong> The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)</li>
 </ol>
 
 <h3 id="calculating-the-probability">Calculating the Probability</h3>
 
-<p>The probability of not proposing a block in a single slot, for a user with V validators, is calculated as follows:</p>
-
+<p>The probability of not proposing a block in a single slot, for a user with V ETH, is calculated as follows:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Probability (Single Slot) = 1 - (V / N)
 </code></pre></div></div>
 
 <p>To extend this to a specific time period, T slots, the formula becomes:</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Probability (T Slots) = (1 - (V / N))^T
 </code></pre></div></div>
 
@@ -140,46 +136,51 @@
   <li><strong>For One Month:</strong> Approximating a month as 30 days, T = 216,000 slots.</li>
 </ul>
 
-<h2 id="probabilities-for-1-validator">Probabilities for 1 Validator</h2>
+<h2 id="probabilities-for-32-eth">Probabilities for 32 ETH</h2>
 
 <ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{1}{905,000}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{1}{905,000} \right)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{1}{905,000} \right)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{1}{905,000} \right)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{1}{905,000} \right)^{216000}\)</li>
+  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - rac{32}{32508697}\)</li>
+  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - rac{32}{32508697} 
+ight)^{300}\)</li>
+  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - rac{32}{32508697} 
+ight)^{7200}\)</li>
+  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - rac{32}{32508697} 
+ight)^{50400}\)</li>
+  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - rac{32}{32508697} 
+ight)^{216000}\)</li>
 </ul>
 
 <h3 id="summary">Summary</h3>
 <ul>
   <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 99.97%</li>
-  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 99.21%</li>
-  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 94.58%</li>
-  <li><strong>Chance of not proposing a block in one month:</strong> Approximately 78.75%</li>
-  <li><strong>Chance of not proposing a block in 3 months:</strong> Approximately 48.84%</li>
-  <li><strong>Chance of not proposing a block in 6 months:</strong> Approximately 23.86%</li>
-  <li><strong>Chance of not proposing a block in 1 year:</strong> Approximately 5.69%</li>
+  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 99.29%</li>
+  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 95.16%</li>
+  <li><strong>Chance of not proposing a block in one month:</strong> Approximately 80.85%</li>
 </ul>
 
-<h2 id="probabilities-for-100-validators">Probabilities for 100 Validators</h2>
+<h2 id="probabilities-for-3200-eth">Probabilities for 3200 ETH</h2>
 
 <ul>
-  <li><strong>Probability of not proposing a block in one slot (for any of the 100 validators):</strong> \(1 - \frac{100}{905,000}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{100}{905,000} \right)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{100}{905,000} \right)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{100}{905,000} \right)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{100}{905,000} \right)^{216000}\)</li>
+  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - rac{3200}{32508697}\)</li>
+  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
+ight)^{300}\)</li>
+  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
+ight)^{7200}\)</li>
+  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
+ight)^{50400}\)</li>
+  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
+ight)^{216000}\)</li>
 </ul>
 
 <h3 id="summary-1">Summary</h3>
 <ul>
-  <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 96.74%</li>
-  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 45.10%</li>
-  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 0.38%</li>
+  <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 97.09%</li>
+  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 49.23%</li>
+  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 0.70%</li>
   <li><strong>Chance of not proposing a block in one month:</strong> Practically 0% (very close to zero)</li>
 </ul>
 
-<p>Finally, this is a simple model yada yada (technically you should look at effective validator balances), if you want to see the latest’s statistics on block proposal frequency, see <a href="https://luckystaker.com/home/">LuckyStaker.com</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"]]></summary></entry><entry><title type="html">Nailed that one</title><link href="https://www.yewjin.com/blog/2024/nailed-that-one/" rel="alternate" type="text/html" title="Nailed that one" /><published>2024-01-20T08:00:00+00:00</published><updated>2024-01-20T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/nailed-that-one</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/nailed-that-one/"><![CDATA[<p>In other words, $10K worth of Bitcoins bought today could be valued at $1M (or zero dollars) in only just a tew years.</p>
+<p>Finally, if you want to see the latest statistics on block proposal frequency, see <a href="https://luckystaker.com/home/">LuckyStaker.com</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"]]></summary></entry><entry><title type="html">Nailed that one</title><link href="https://www.yewjin.com/blog/2024/nailed-that-one/" rel="alternate" type="text/html" title="Nailed that one" /><published>2024-01-20T08:00:00+00:00</published><updated>2024-01-20T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/nailed-that-one</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/nailed-that-one/"><![CDATA[<p>In other words, $10K worth of Bitcoins bought today could be valued at $1M (or zero dollars) in only just a tew years.</p>
 <ul>
   <li>Yew Jin, July 2014, <a href="https://docs.google.com/document/d/1-3R10vhbe5GgBeREda3nAXtlT5YpwEviBao340H3tgM/edit?usp=sharing">Bitcoin investment thesis</a></li>
 </ul>

@@ -5,6 +5,8 @@ title: Estimating the Probability of Not Proposing an Ethereum Block
 date: 2024-01-27 08:00:00
 description: When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"
 ---
+**Update(June 2024)**: In anticipation for Pectra update and [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251). Updated [plot](https://www.yewjin.com/assets/html/eth_block_probability.html) to use staked ETH instead of number of validators since the total number of validators would be inaccurate after this upgrade.
+
 **Update(May 2024)**: See pretty plot [yewjin.com/assets/html/eth_block_probability.html](https://www.yewjin.com/assets/html/eth_block_probability.html)
 
 As an Ethereum staker, one of the key aspects of participation in the network is decentralization ... OK ... nevermind it's the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here's how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month. Because, admit it, you are only asking this question after not getting a block proposal for that long and you are asking: "WHAT ARE THE ODDS?!"

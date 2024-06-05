@@ -5,7 +5,7 @@ title: Estimating the Probability of Not Proposing an Ethereum Block
 date: 2024-01-27 08:00:00
 description: When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"
 ---
-**Update(June 2024)**: In anticipation for Pectra update and [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251). Updated [plot](https://www.yewjin.com/assets/html/eth_block_probability.html) to use staked ETH instead of number of validators since the total number of validators would be inaccurate after this upgrade.
+**Update(June 2024)**: In anticipation for Pectra update and [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251). Updated [plot](https://www.yewjin.com/assets/html/eth_block_probability.html) to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after this upgrade.
 
 **Update(May 2024)**: See pretty plot [yewjin.com/assets/html/eth_block_probability.html](https://www.yewjin.com/assets/html/eth_block_probability.html)
 

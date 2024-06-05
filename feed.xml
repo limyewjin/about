@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-05T15:30:13+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-05T15:38:38+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Breaking down silos to grow</title><link href="https://www.yewjin.com/blog/2024/breaking-silos/" rel="alternate" type="text/html" title="Breaking down silos to grow" /><published>2024-04-03T08:00:00+00:00</published><updated>2024-04-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/breaking-silos</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/breaking-silos/"><![CDATA[<p>Here’s the thing: growth ideas often come from thinking outside the box and looking at the full complexity of the user flow, rather than getting stuck in the silos created by products, features, and org structures.</p>
 
 <p>Basically, no matter how you slice and dice your projects to optimize for Growth (capital G), the real growth (lowercase g) often lies in the seams between those projects and teams.</p>
@@ -107,12 +107,14 @@
 
 <p>I am cautiously optimistic, but the success of Ethereum feels like a matter of “when” rather than “if.” I’m betting it’s Gen AI-related.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Gen AI + Ethereum]]></summary></entry><entry><title type="html">Estimating the Probability of Not Proposing an Ethereum Block</title><link href="https://www.yewjin.com/blog/2024/eth-validator-block-probability/" rel="alternate" type="text/html" title="Estimating the Probability of Not Proposing an Ethereum Block" /><published>2024-01-27T08:00:00+00:00</published><updated>2024-01-27T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/eth-validator-block-probability</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/eth-validator-block-probability/"><![CDATA[<p><strong>Update(June 2024)</strong>: This blog post is updated regularly (ideally daily!) with the current eligible ETH value from the blockchain. In anticipation for Pectra update and <a href="https://eips.ethereum.org/EIPS/eip-7251">EIP-7251</a>. Updated <a href="https://www.yewjin.com/assets/html/eth_block_probability.html">plot</a> to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after this upgrade.</p>
 
+<p><a href="https://www.yewjin.com/assets/html/eth_block_probability.html">yewjin.com/assets/html/eth_block_probability.html</a> is a plot of the probabilities where you can fit in your own values.</p>
+
 <p>As an Ethereum staker, one of the key aspects of participation in the network is decentralization … OK … nevermind it’s the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here’s how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month. Because, admit it, you are only asking this question after not getting a block proposal for that long and you are asking: “WHAT ARE THE ODDS?!”</p>
 
 <p>The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/">Block Proposal (ethereum.org)</a></p>
 
 <ol>
-  <li><strong>Total Eligible ETH (N):</strong> The total amount of eligible ETH in the network. As of 2024-06-05 08:29, it’s approximately 32508697 ETH.</li>
+  <li><strong>Total Eligible ETH (N):</strong> The total amount of eligible ETH in the network. As of 2024-06-05 08:37, it’s approximately 32508953 ETH.</li>
   <li><strong>Your ETH (V):</strong> The amount of ETH you have staked.</li>
   <li><strong>Time Period (T):</strong> The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)</li>
 </ol>
@@ -139,15 +141,11 @@
 <h2 id="probabilities-for-32-eth">Probabilities for 32 ETH</h2>
 
 <ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - rac{32}{32508697}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - rac{32}{32508697} 
-ight)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - rac{32}{32508697} 
-ight)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - rac{32}{32508697} 
-ight)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - rac{32}{32508697} 
-ight)^{216000}\)</li>
+  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{32}{32508953}\)</li>
+  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{32}{32508953} \right)^{300}\)</li>
+  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{32}{32508953} \right)^{7200}\)</li>
+  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{32}{32508953} \right)^{50400}\)</li>
+  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{32}{32508953} \right)^{216000}\)</li>
 </ul>
 
 <h3 id="summary">Summary</h3>
@@ -161,15 +159,11 @@ ight)^{216000}\)</li>
 <h2 id="probabilities-for-3200-eth">Probabilities for 3200 ETH</h2>
 
 <ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - rac{3200}{32508697}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
-ight)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
-ight)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
-ight)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - rac{3200}{32508697} 
-ight)^{216000}\)</li>
+  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{3200}{32508953}\)</li>
+  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{3200}{32508953} \right)^{300}\)</li>
+  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{3200}{32508953} \right)^{7200}\)</li>
+  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{3200}{32508953} \right)^{50400}\)</li>
+  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{3200}{32508953} \right)^{216000}\)</li>
 </ul>
 
 <h3 id="summary-1">Summary</h3>

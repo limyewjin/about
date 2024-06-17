@@ -13,7 +13,7 @@ As an Ethereum staker, one of the key aspects of participation in the network is
 
 The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See [Block Proposal (ethereum.org)](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/)
 
-1. **Total Eligible ETH (N):** The total amount of eligible ETH in the network. As of 2024-06-16, it's approximately 32754709 ETH.
+1. **Total Eligible ETH (N):** The total amount of eligible ETH in the network. As of 2024-06-16 19:12, it's approximately 32775029 ETH.
 2. **Your ETH (V):** The amount of ETH you have staked.
 3. **Time Period (T):** The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)
 
@@ -38,30 +38,48 @@ Handy number of slots in various time periods
 
 ## Probabilities for 32 ETH
 
-- **Probability of not proposing a block in one slot:** $$ 1 - \frac{32}{32754709} $$
-- **One Hour (300 slots):** $$ \left( 1 - \frac{32}{32754709} \right)^{300} $$
-- **One Day (7,200 slots):** $$ \left( 1 - \frac{32}{32754709} \right)^{7200} $$
-- **One Week (50,400 slots):** $$ \left( 1 - \frac{32}{32754709} \right)^{50400} $$
-- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{32}{32754709} \right)^{216000} $$
+- **Probability of not proposing a block in one slot:** $$ 1 - \frac{32}{32775029} $$
+- **One Hour (300 slots):** $$ \left( 1 - \frac{32}{32775029} \right)^{300} $$
+- **One Day (7,200 slots):** $$ \left( 1 - \frac{32}{32775029} \right)^{7200} $$
+- **One Week (50,400 slots):** $$ \left( 1 - \frac{32}{32775029} \right)^{50400} $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{32}{32775029} \right)^{216000} $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 99.97%
 - **Chance of not proposing a block in one day:** Approximately 99.30%
 - **Chance of not proposing a block in one week:** Approximately 95.20%
-- **Chance of not proposing a block in one month:** Approximately 80.98%
+- **Chance of not proposing a block in one month:** Approximately 80.99%
 
 ## Probabilities for 3200 ETH
 
-- **Probability of not proposing a block in one slot:** $$ 1 - \frac{3200}{32754709} $$
-- **One Hour (300 slots):** $$ \left( 1 - \frac{3200}{32754709} \right)^{300} $$
-- **One Day (7,200 slots):** $$ \left( 1 - \frac{3200}{32754709} \right)^{7200} $$
-- **One Week (50,400 slots):** $$ \left( 1 - \frac{3200}{32754709} \right)^{50400} $$
-- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{3200}{32754709} \right)^{216000} $$
+- **Probability of not proposing a block in one slot:** $$ 1 - \frac{3200}{32775029} $$
+- **One Hour (300 slots):** $$ \left( 1 - \frac{3200}{32775029} \right)^{300} $$
+- **One Day (7,200 slots):** $$ \left( 1 - \frac{3200}{32775029} \right)^{7200} $$
+- **One Week (50,400 slots):** $$ \left( 1 - \frac{3200}{32775029} \right)^{50400} $$
+- **One Month (approx. 30 days, 216,000 slots):** $$ \left( 1 - \frac{3200}{32775029} \right)^{216000} $$
 
 ### Summary
 - **Chance of not proposing a block in one hour:** Approximately 97.11%
-- **Chance of not proposing a block in one day:** Approximately 49.49%
+- **Chance of not proposing a block in one day:** Approximately 49.51%
 - **Chance of not proposing a block in one week:** Approximately 0.73%
 - **Chance of not proposing a block in one month:** Practically 0% (very close to zero)
+
+# Calculating the Probability of Proposing At Least B Blocks
+
+To calculate the probability of proposing at least B blocks, we can use the Poisson distribution as an approximation for large T, where T is the total number of slots and p is the probability of proposing a block in a slot. The parameter lambda (λ) for the Poisson distribution is:
+
+$$ \lambda = T \times \left( \frac{V}{N} \right) $$
+
+The cumulative probability of proposing at least B blocks is:
+
+$$ P(\text{proposing at least } B \text{ blocks}) = 1 - \sum_{k=0}^{B-1} \frac{\lambda^k e^{-\lambda}}{k!} $$
+
+where $$ \lambda = T \times \left( \frac{V}{N} \right) $$.
+
+### Example Probabilities for 32 ETH
+
+- **Probability of proposing at least 1 block in one day:** $$ 1 - \sum_{k=0}^{0} \frac{\lambda_{1 \, day}^k e^{-\lambda_{1 \, day}}}{k!} $$
+- **Probability of proposing at least 2 blocks in one week:** $$ 1 - \sum_{k=0}^{1} \frac{\lambda_{1 \, week}^k e^{-\lambda_{1 \, week}}}{k!} $$
+- **Probability of proposing at least 5 blocks in one month:** $$ 1 - \sum_{k=0}^{4} \frac{\lambda_{1 \, month}^k e^{-\lambda_{1 \, month}}}{k!} $$
 
 Finally, if you want to see the latest statistics on block proposal frequency, see [LuckyStaker.com](https://luckystaker.com/home/)

@@ -5,15 +5,15 @@ title: Estimating the Probability of Not Proposing an Ethereum Block
 date: 2024-01-27 08:00:00
 description: When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"
 ---
-**Update(June 2024)**: This blog post is updated regularly (ideally daily!) with the current eligible ETH value from the blockchain. In anticipation for Pectra update and [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251), [plot](https://www.yewjin.com/assets/html/eth_block_probability.html) is updated to use staked ETH instead of number of validators since the total number of validators would be inaccurate to use to compute block proposal probability after Pectra.
+**Plot**: [yewjin.com/assets/html/eth_block_probability.html](https://www.yewjin.com/assets/html/eth_block_probability.html) is a plot of the probabilities where you can fit in your own values.
 
-[yewjin.com/assets/html/eth_block_probability.html](https://www.yewjin.com/assets/html/eth_block_probability.html) is a plot of the probabilities where you can fit in your own values.
+**Note (June 2024)**: This blog post is updated regularly (ideally daily!) with the current eligible ETH value from the blockchain.
 
 As an Ethereum staker, one of the key aspects of participation in the network is decentralization ... OK ... nevermind it's the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here's how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month. Because, admit it, you are only asking this question after not getting a block proposal for that long and you are asking: "WHAT ARE THE ODDS?!"
 
 The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See [Block Proposal (ethereum.org)](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/)
 
-1. **Total Eligible ETH (N):** The total amount of eligible ETH in the network. As of 2024-06-16 10:15, it's approximately 32754709 ETH.
+1. **Total Eligible ETH (N):** The total amount of eligible ETH in the network. As of 2024-06-16, it's approximately 32754709 ETH.
 2. **Your ETH (V):** The amount of ETH you have staked.
 3. **Time Period (T):** The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)
 

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Probability of Not Proposing a Block</title>
+  <title>Probability of Proposing Blocks</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>Probability of Not Proposing a Block</h1>
+  <h1>Probability of Proposing Blocks</h1>
   <label for="eth">Your ETH Staked:</label>
   <input type="number" id="eth" min="1" value="32">
   <br>
   <label for="totalEligibleEther">Total Eligible Ether:</label>
   <input type="number" id="totalEligibleEther" min="1" value="32754709">
-  <span style="font-size: 12px; color: gray;">(Last updated: 2024-06-16 10:15)</span>
+  <span style="font-size: 12px; color: gray;">(Last updated: 2024-06-16)</span>
   <br>
   <label for="days">Number of Days:</label>
   <input type="number" id="days" min="1" value="30">
+  <br>
+  <label for="blocks">Minimum Number of Blocks:</label>
+  <input type="number" id="blocks" min="0" value="1">
   <br>
   <button onclick="plotProbability()">Plot Probability</button>
   <br>
@@ -23,20 +26,48 @@
   <script>
     let chart;
 
+    function binomialCoefficient(n, k) {
+      if (k > n) return 0;
+      if (k === 0 || k === n) return 1;
+      if (k > n - k) k = n - k; // Take advantage of symmetry
+      let c = 1;
+      for (let i = 0; i < k; i++) {
+        c = c * (n - i) / (i + 1);
+      }
+      return c;
+    }
+
+    function binomialProbability(n, k, p) {
+      return binomialCoefficient(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);
+    }
+
+    function cumulativeBinomialProbability(n, k, p) {
+      let sum = 0;
+      for (let i = k; i <= n; i += Math.max(1, Math.floor(n / 100))) { // Reduce the number of iterations
+        sum += binomialProbability(n, i, p);
+      }
+      return sum;
+    }
+
     function plotProbability() {
       const ethAmount = parseInt(document.getElementById('eth').value);
       const totalEligibleEther = parseInt(document.getElementById('totalEligibleEther').value);
       const days = parseInt(document.getElementById('days').value);
+      const minBlocks = parseInt(document.getElementById('blocks').value);
 
       const V = ethAmount;
       const N = totalEligibleEther;
-
+      const slotsPerDay = 7200;
       const timeUnits = [];
-      for (let i = 1; i <= days; i++) {
-        timeUnits.push({ label: `Day ${i}`, slots: i * 7200 });
-      }
+      const notProposingProbabilities = [];
+      const atLeastBlocksProbabilities = [];
 
-      const probabilities = timeUnits.map(unit => Math.pow(1 - (V / N), unit.slots));
+      for (let i = 1; i <= days; i++) {
+        const slots = i * slotsPerDay;
+        timeUnits.push(`Day ${i}`);
+        notProposingProbabilities.push(Math.pow(1 - (V / N), slots));
+        atLeastBlocksProbabilities.push(cumulativeBinomialProbability(slots, minBlocks, V / N));
+      }
 
       const ctx = document.getElementById('probabilityChart').getContext('2d');
 
@@ -47,19 +78,27 @@
       chart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: timeUnits.map(unit => unit.label),
-          datasets: [{
-            label: 'Probability of Not Proposing a Block',
-            data: probabilities,
-            borderColor: 'blue',
-            fill: false
-          }]
+          labels: timeUnits,
+          datasets: [
+            {
+              label: 'Probability of Not Proposing a Block',
+              data: notProposingProbabilities,
+              borderColor: 'blue',
+              fill: false
+            },
+            {
+              label: `Probability of Proposing At Least ${minBlocks} Blocks`,
+              data: atLeastBlocksProbabilities,
+              borderColor: 'red',
+              fill: false
+            }
+          ]
         },
         options: {
           responsive: true,
           title: {
             display: true,
-            text: 'Probability of Not Proposing a Block'
+            text: 'Probability of Proposing Blocks'
           },
           scales: {
             x: {

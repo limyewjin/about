@@ -10,8 +10,8 @@
   <input type="number" id="eth" min="1" value="32">
   <br>
   <label for="totalEligibleEther">Total Eligible Ether:</label>
-  <input type="number" id="totalEligibleEther" min="1" value="32754709">
-  <span style="font-size: 12px; color: gray;">(Last updated: 2024-06-16)</span>
+  <input type="number" id="totalEligibleEther" min="1" value="32775029">
+  <span style="font-size: 12px; color: gray;">(Last updated: 2024-06-16 19:12)</span>
   <br>
   <label for="days">Number of Days:</label>
   <input type="number" id="days" min="1" value="30">
@@ -26,27 +26,20 @@
   <script>
     let chart;
 
-    function binomialCoefficient(n, k) {
-      if (k > n) return 0;
-      if (k === 0 || k === n) return 1;
-      if (k > n - k) k = n - k; // Take advantage of symmetry
-      let c = 1;
-      for (let i = 0; i < k; i++) {
-        c = c * (n - i) / (i + 1);
-      }
-      return c;
+    function factorial(n) {
+      return n ? n * factorial(n - 1) : 1;
     }
 
-    function binomialProbability(n, k, p) {
-      return binomialCoefficient(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);
+    function poissonProbability(lambda, k) {
+      return (Math.pow(lambda, k) * Math.exp(-lambda)) / factorial(k);
     }
 
-    function cumulativeBinomialProbability(n, k, p) {
+    function cumulativePoissonProbability(lambda, B) {
       let sum = 0;
-      for (let i = k; i <= n; i += Math.max(1, Math.floor(n / 100))) { // Reduce the number of iterations
-        sum += binomialProbability(n, i, p);
+      for (let k = 0; k < B; k++) {
+        sum += poissonProbability(lambda, k);
       }
-      return sum;
+      return 1 - sum;
     }
 
     function plotProbability() {
@@ -64,9 +57,10 @@
 
       for (let i = 1; i <= days; i++) {
         const slots = i * slotsPerDay;
+        const lambda = slots * (V / N);
         timeUnits.push(`Day ${i}`);
         notProposingProbabilities.push(Math.pow(1 - (V / N), slots));
-        atLeastBlocksProbabilities.push(cumulativeBinomialProbability(slots, minBlocks, V / N));
+        atLeastBlocksProbabilities.push(cumulativePoissonProbability(lambda, minBlocks));
       }
 
       const ctx = document.getElementById('probabilityChart').getContext('2d');

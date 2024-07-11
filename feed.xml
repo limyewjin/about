@@ -1,5 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-11T03:25:29+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">Breaking down silos to grow</title><link href="https://www.yewjin.com/blog/2024/breaking-silos/" rel="alternate" type="text/html" title="Breaking down silos to grow" /><published>2024-04-03T08:00:00+00:00</published><updated>2024-04-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/breaking-silos</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/breaking-silos/"><![CDATA[<p>Here’s the thing: growth ideas often come from thinking outside the box and looking at the full complexity of the user flow, rather than getting stuck in the silos created by products, features, and org structures.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-11T04:02:30+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">What’s Next?</title><link href="https://www.yewjin.com/blog/2024/what-next/" rel="alternate" type="text/html" title="What’s Next?" /><published>2024-07-10T08:00:00+00:00</published><updated>2024-07-10T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/what-next</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/what-next/"><![CDATA[<p>Just read “Defeated by A.I., a Legend in the Board Game Go Warns: Get Ready for What’s Next”<sup id="fnref:0" role="doc-noteref"><a href="#fn:0" class="footnote" rel="footnote">1</a></sup>, and as someone who did their PhD in game-tree search, I’ve watched in awe as AI has evolved from mastering board games to tackling some of humanity’s most pressing challenges. The journey from early game-playing algorithms to today’s multifaceted AI systems is nothing short of extraordinary.</p>
+
+<h3 id="the-game-changing-progression">The Game-Changing Progression</h3>
+
+<p>The evolution of game AI tells a fascinating story of human ingenuity. We started with simple minimax algorithms and alpha-beta pruning, techniques that seemed cutting-edge at the time. Then came knowledge-based systems, leveraging human expertise to improve performance.</p>
+
+<p>A significant leap during my PhD was the advent of Monte Carlo methods, particularly Monte Carlo Tree Search (MCTS). This probabilistic approach opened new horizons, allowing AI to handle the vast complexity of games like Go.</p>
+
+<p>In fact, the impact of MCTS on the field was so profound that it accelerated my own academic journey. I was deep into my PhD research on forward pruning and selective search in game-tree search when MCTS emerged. It quickly became clear that complete game-tree search might not be the future of game AI. This realization prompted me to swiftly wrap up my research into a PhD thesis.
+The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13327">thesis</a> (2007) reflects this pivotal moment:</p>
+
+<blockquote>
+  <p>The game of Go can be considered as the grand challenge of game AI at this point in time. One interesting development in computer Go has been the introduction of Monte Carlo methods that combine game-tree search and randomly generated moves for evaluation [Coulom, 2006, Kocsis and Szepesvári, 2006]. The random nature of Monte Carlo methods corresponds well with the theoretical analysis of the properties of forward pruning presented in this thesis, and should extend to Monte Carlo tree search. More research on how to incorporate risk management strategies in forward pruning can be done to further improve the state of the art for Monte Carlo tree search.”</p>
+</blockquote>
+
+<p>Looking back, it’s remarkable how accurate this assessment was. MCTS indeed became a cornerstone in advanced game AI, particularly in conquering the game of Go.</p>
+
+<p>But the true revolution came with the integration of deep learning. Neural networks, once considered a relic of AI’s past, roared back to life. They brought with them the ability to learn complex patterns and strategies from raw data. This culminated in the creation of AlphaGo, a system that shocked the world by defeating Lee Saedol, one of the greatest Go players of our time.</p>
+
+<p>Yet, AlphaGo was just the beginning. AlphaGo Zero and then AlphaZero demonstrated that AI could learn superhuman strategies without any human knowledge, purely through self-play. The implications were staggering.</p>
+
+<h3 id="beyond-the-game-board">Beyond the Game Board</h3>
+
+<p>What truly excites me is how these game-playing techniques have found applications far beyond the world of board games. Let me share some cutting-edge examples:</p>
+
+<h4 id="weather-forecasting">Weather Forecasting</h4>
+
+<p>The advancements in game AI have found significant applications beyond the game board, one of which is weather forecasting. Google’s MetNet-3<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup> leverages techniques reminiscent of those used in game AI to tackle the complexities of atmospheric dynamics. By integrating the data assimilation and simulation processes into a single neural network pass, MetNet-3 can provide high-resolution weather predictions up to 24 hours ahead, covering variables such as precipitation, temperature, wind, and dew point. This model outperforms traditional physics-based numerical weather prediction methods, achieving temporal resolutions as fine as two minutes and spatial resolutions of one to four kilometers.</p>
+
+<h4 id="drug-discovery">Drug Discovery</h4>
+
+<p>In the realm of drug discovery, AI techniques refined in game-playing applications are accelerating research and development. Insilico Medicine’s AI-generated drug for idiopathic pulmonary fibrosis (IPF)<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup> is a prime example. Their AI system, which includes platforms like PandaOmics and Chemistry42, identified a novel therapeutic target (TNIK) and designed a small molecule (INS018_055) for IPF treatment in just 18 months, a process that traditionally takes years. This AI-driven approach mirrors game AI’s method of identifying key strategic points and developing optimal strategies to exploit them. The rapid progression of this AI-designed drug, now in Phase 2 clinical trials, underscores the potential of AI in pharmaceutical research.</p>
+
+<h4 id="molecular-biology">Molecular Biology</h4>
+
+<p>In molecular biology, the impact of AI is profoundly illustrated by AlphaFold 3<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">4</a></sup>, which extends the capabilities of its predecessor by predicting the structure and interactions of a wide range of biological molecules, including proteins, DNA, RNA, and small molecules. This progression from predicting protein structures to modeling complex molecular interactions showcases the significant leap in AI’s application in biology. AlphaFold 3’s enhanced architecture, featuring an improved Evoformer module and a diffusion network, has achieved a substantial improvement in the accuracy of predicting protein interactions, further advancing our understanding of cellular biology.</p>
+
+<h3 id="the-common-thread">The Common Thread</h3>
+
+<p>What fascinates me most is the common thread running through all these applications – the ability of AI to learn complex patterns and make decisions in high-dimensional, uncertain environments. Whether it’s navigating the vast possibility space of Go, predicting chaotic weather systems, or exploring the intricate world of molecular structures, AI is proving to be a powerful tool.</p>
+
+<h3 id="looking-ahead">Looking Ahead</h3>
+
+<p>As we stand at this exciting juncture, I can’t help but wonder: what’s next? Which field will see the next AlphaZero-like breakthrough? How might these AI techniques reshape your industry?</p>
+
+<p>One thing is certain – we’re not just spectators in this AI renaissance. We’re potential collaborators, innovators, and pioneers. The games AI has learned to play have prepared it for the greatest game of all – advancing human knowledge and capabilities across all fields of endeavor.</p>
+
+<p>I’m eager to hear your thoughts. How do you see AI impacting your field in the coming years?</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:0" role="doc-endnote">
+      <p><a href="https://www.nytimes.com/2024/07/10/world/asia/lee-saedol-go-ai.html">NYTimes - Defeated by A.I., a Legend in the Board Game Go Warns: Get Ready for What’s Next</a> <a href="#fnref:0" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://research.google/blog/metnet-3-a-state-of-the-art-neural-weather-model-available-in-google-products/">Google Research - MetNet-3</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://cen.acs.org/physical-chemistry/computational-chemistry/Insilico-reveals-soup-to-nuts-process-for-AI-generated-lung-fibrosis-drug/102/web/2024/03">Chemical &amp; Engineering News - Insilico Reveals AI-Generated Drug for Lung Fibrosis</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><a href="https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/#future-cell-biology">Google Blog - AlphaFold 3</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[Let me get my popcorn...]]></summary></entry><entry><title type="html">Breaking down silos to grow</title><link href="https://www.yewjin.com/blog/2024/breaking-silos/" rel="alternate" type="text/html" title="Breaking down silos to grow" /><published>2024-04-03T08:00:00+00:00</published><updated>2024-04-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/breaking-silos</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/breaking-silos/"><![CDATA[<p>Here’s the thing: growth ideas often come from thinking outside the box and looking at the full complexity of the user flow, rather than getting stuck in the silos created by products, features, and org structures.</p>
 
 <p>Basically, no matter how you slice and dice your projects to optimize for Growth (capital G), the real growth (lowercase g) often lies in the seams between those projects and teams.</p>
 
@@ -339,10 +403,4 @@
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>In the next three years, the world is likely to change more than it has in the past 10 years due to the rapid development of LLMs, generative AI, and blockchain. LLMs allow humans to write more quickly and eloquently, while generative AI image and video generation is likely to improve the quality of digital media. Blockchains and NFTs will help reduce digital theft and create a secure way of proving digital ownership. All of these technologies are likely to overwhelm our current systems, leading to a cultural and economic revolution where these technologies work together to create a new ecosystem to support the industry.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[LLM, Generative AI Art, and Blockchain are going to change the world]]></summary></entry><entry><title type="html">Learning as a Web3 creator</title><link href="https://www.yewjin.com/blog/2022/web3-creator/" rel="alternate" type="text/html" title="Learning as a Web3 creator" /><published>2022-12-18T08:00:00+00:00</published><updated>2022-12-18T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2022/web3-creator</id><content type="html" xml:base="https://www.yewjin.com/blog/2022/web3-creator/"><![CDATA[<p>I have been looking for ways to learn more about Web3 and content creating. And I recently stumbled upon a great platform called <a href="https://showtime.xyz">showtime.xyz</a>, which facilitates creators to upload and showcase their NFTs, digital and crypto art.</p>
-
-<p>With showtime.xyz, I have found a way to not only learn more about Web3, but also to use AI artwork and mint NFTs to do it. As a bonus, I am able to find an excuse to create AI art.</p>
-
-<p>Showtime.xyz mints NFTs on Polygon mainnet and gives them to users for free.</p>
-
-<p>To make the most of the platform, I have been thinking about how to organize my artwork so that it is attractive and also creates buzz. I have also created token-gated access to new content so that there is incentive for people to engage with my work. Check out <a href="https://showtime.xyz/yewjin">showtime.xyz/yewjin</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learning by doing]]></summary></entry></feed>
+<p>In the next three years, the world is likely to change more than it has in the past 10 years due to the rapid development of LLMs, generative AI, and blockchain. LLMs allow humans to write more quickly and eloquently, while generative AI image and video generation is likely to improve the quality of digital media. Blockchains and NFTs will help reduce digital theft and create a secure way of proving digital ownership. All of these technologies are likely to overwhelm our current systems, leading to a cultural and economic revolution where these technologies work together to create a new ecosystem to support the industry.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[LLM, Generative AI Art, and Blockchain are going to change the world]]></summary></entry></feed>

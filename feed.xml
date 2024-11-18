@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-11-18T17:25:42+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-11-18T18:15:34+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">What’s Next?</title><link href="https://www.yewjin.com/blog/2024/bullshit-ai-jobs/" rel="alternate" type="text/html" title="What’s Next?" /><published>2024-08-03T08:00:00+00:00</published><updated>2024-08-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/bullshit-ai-jobs</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/bullshit-ai-jobs/"><![CDATA[<p>John Maynard Keynes predicted a 15-hour workweek, but we’ve instead created millions of pointless jobs. It’s like how we have 100x more powerful machines and storage, yet our calculator apps have bloated to use 99x of that improvement.</p>
 
 <p>In 2013, anthropologist David Graeber coined the term ‘bullshit jobs’ - roles so meaningless that even those doing them struggle to justify their existence. Fast forward to 2024, and AI is poised to automate many of these jobs.</p>
@@ -184,7 +184,7 @@ The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13
 <p>The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/">Block Proposal (ethereum.org)</a></p>
 
 <ol>
-  <li><strong>Total Eligible ETH (N):</strong> The total amount of eligible ETH in the network. As of 2024-11-17 10:15, it’s approximately 34459512 ETH.</li>
+  <li><strong>Total Eligible ETH (N):</strong> The total amount of eligible ETH in the network. As of 2024-11-18 10:15, it’s approximately 34399831 ETH.</li>
   <li><strong>Your ETH (V):</strong> The amount of ETH you have staked.</li>
   <li><strong>Time Period (T):</strong> The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)</li>
 </ol>
@@ -211,36 +211,36 @@ The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13
 <h2 id="probabilities-for-32-eth">Probabilities for 32 ETH</h2>
 
 <ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{32}{34459512}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{32}{34459512} \right)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{32}{34459512} \right)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{32}{34459512} \right)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{32}{34459512} \right)^{216000}\)</li>
+  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{32}{34399831}\)</li>
+  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{32}{34399831} \right)^{300}\)</li>
+  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{32}{34399831} \right)^{7200}\)</li>
+  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{32}{34399831} \right)^{50400}\)</li>
+  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{32}{34399831} \right)^{216000}\)</li>
 </ul>
 
 <h3 id="summary">Summary</h3>
 <ul>
   <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 99.97%</li>
   <li><strong>Chance of not proposing a block in one day:</strong> Approximately 99.33%</li>
-  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 95.43%</li>
-  <li><strong>Chance of not proposing a block in one month:</strong> Approximately 81.83%</li>
+  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 95.42%</li>
+  <li><strong>Chance of not proposing a block in one month:</strong> Approximately 81.80%</li>
 </ul>
 
 <h2 id="probabilities-for-3200-eth">Probabilities for 3200 ETH</h2>
 
 <ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{3200}{34459512}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{3200}{34459512} \right)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{3200}{34459512} \right)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{3200}{34459512} \right)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{3200}{34459512} \right)^{216000}\)</li>
+  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{3200}{34399831}\)</li>
+  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{3200}{34399831} \right)^{300}\)</li>
+  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{3200}{34399831} \right)^{7200}\)</li>
+  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{3200}{34399831} \right)^{50400}\)</li>
+  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{3200}{34399831} \right)^{216000}\)</li>
 </ul>
 
 <h3 id="summary-1">Summary</h3>
 <ul>
   <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 97.25%</li>
-  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 51.24%</li>
-  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 0.93%</li>
+  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 51.18%</li>
+  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 0.92%</li>
   <li><strong>Chance of not proposing a block in one month:</strong> Practically 0% (very close to zero)</li>
 </ul>
 

@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>What's Next? | Yew Jin</title>
+    <title>Quick Prompt Engineering Tip | Yew Jin</title>
     <meta name="author" content="Yew Jin  Lim">
-    <meta name="description" content="Let me get my popcorn...">
+    <meta name="description" content="One common requirement I have using LLMs is controlling their response length">
     <meta name="keywords" content="Yew Jin, Yewjin, Yew Jin Lim, limyewjin, yewjinlim, yewjin.eth">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://www.yewjin.com/blog/2024/what-next/">
+    <link rel="canonical" href="https://www.yewjin.com/blog/2024/llm-tutorial-2/">
     
     <!-- Dark Mode -->
     
@@ -109,8 +109,8 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">What's Next?</h1>
-    <p class="post-meta">July 10, 2024</p>
+    <h1 class="post-title">Quick Prompt Engineering Tip</h1>
+    <p class="post-meta">November 24, 2024</p>
     <p class="post-tags">
       <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
 
@@ -118,71 +118,34 @@
   </header>
 
   <article class="post-content">
-    <p>Just read “Defeated by A.I., a Legend in the Board Game Go Warns: Get Ready for What’s Next”<sup id="fnref:0"><a href="#fn:0" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>, and as someone who did their PhD in game-tree search, I’ve watched in awe as AI has evolved from mastering board games to tackling some of humanity’s most pressing challenges. The journey from early game-playing algorithms to today’s multifaceted AI systems is nothing short of extraordinary.</p>
+    <p>One common requirement I have using LLMs is controlling their response length (maximum number of words, minimum number of words, number of bullet points, etc.). I have done a few tests to share some key insights for controlling length in LLMs.</p>
 
-<h3 id="the-game-changing-progression">The Game-Changing Progression</h3>
+<h1 id="response-text-length">Response Text Length</h1>
 
-<p>The evolution of game AI tells a fascinating story of human ingenuity. We started with simple minimax algorithms and alpha-beta pruning, techniques that seemed cutting-edge at the time. Then came knowledge-based systems, leveraging human expertise to improve performance.</p>
+<ul>
+  <li>“At Most X Words” What surprised me most was how consistently the “at most X words” format outperformed other approaches. While exact word counts tend to overshoot by 10-15%, the “at most” modifier acts like a reliable ceiling. In our tests, the various models from Anthropic, Google, and OpenAI consistently stayed under the specified limit.</li>
+</ul>
 
-<p>A significant leap during my PhD was the advent of Monte Carlo methods, particularly Monte Carlo Tree Search (MCTS). This probabilistic approach opened new horizons, allowing AI to handle the vast complexity of games like Go.</p>
+<p>A Practical Framework for Length Control:</p>
+<ol>
+  <li>For Strict Upper Bounds: Use “at most X words” - it’s your most reliable tool across all models. I’ve found this especially crucial for applications with strict space constraints.</li>
+  <li>For Minimum Length Requirements: The “at least X words” modifier works, but expect significant variations. In our tests, outputs ranged from 119 to 238 words for a 100-word minimum requirement. If you need longer content, this is actually a feature, not a bug.</li>
+  <li>Avoid Common Pitfalls:
+    <ul>
+      <li>Qualitative descriptors (“short,” “very short”) showed the highest variance in our tests</li>
+      <li>Reading time estimates (“30 seconds long”) proved surprisingly inconsistent</li>
+      <li>The format of numbers (“100” vs “one hundred”) doesn’t significantly impact results</li>
+    </ul>
+  </li>
+</ol>
 
-<p>In fact, the impact of MCTS on the field was so profound that it accelerated my own academic journey. I was deep into my PhD research on forward pruning and selective search in game-tree search when MCTS emerged. It quickly became clear that complete game-tree search might not be the future of game AI. This realization prompted me to swiftly wrap up my research into a PhD thesis.
-The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13327" rel="external nofollow noopener" target="_blank">thesis</a> (2007) reflects this pivotal moment:</p>
+<h1 id="bullet-points">Bullet Points</h1>
 
-<blockquote>
-  <p>The game of Go can be considered as the grand challenge of game AI at this point in time. One interesting development in computer Go has been the introduction of Monte Carlo methods that combine game-tree search and randomly generated moves for evaluation [Coulom, 2006, Kocsis and Szepesvári, 2006]. The random nature of Monte Carlo methods corresponds well with the theoretical analysis of the properties of forward pruning presented in this thesis, and should extend to Monte Carlo tree search. More research on how to incorporate risk management strategies in forward pruning can be done to further improve the state of the art for Monte Carlo tree search.”</p>
-</blockquote>
+<p>As you might expect, using ordered lists (e.g., 1., 2., 3., …) works better than unordered, but really only for longer lists. The models across Anthropic, Google, and OpenAI show near-perfect precision for small to medium lists (3-20 points) but diverge significantly with larger requests. For instance, when asking for 50 points, OpenAI tends to overshoot while Anthropic often undershoots with ordered lists.</p>
 
-<p>Looking back, it’s remarkable how accurate this assessment was. MCTS indeed became a cornerstone in advanced game AI, particularly in conquering the game of Go.</p>
+<p>What’s been your experience with controlling LLM output length? Have you noticed any patterns I might have missed in my testing? Let’s continue building our collective understanding of these fascinating tools.</p>
 
-<p>But the true revolution came with the integration of deep learning. Neural networks, once considered a relic of AI’s past, roared back to life. They brought with them the ability to learn complex patterns and strategies from raw data. This culminated in the creation of AlphaGo, a system that shocked the world by defeating Lee Saedol, one of the greatest Go players of our time.</p>
-
-<p>Yet, AlphaGo was just the beginning. AlphaGo Zero and then AlphaZero demonstrated that AI could learn superhuman strategies without any human knowledge, purely through self-play. The implications were staggering.</p>
-
-<h3 id="beyond-the-game-board">Beyond the Game Board</h3>
-
-<p>What truly excites me is how these game-playing techniques have found applications far beyond the world of board games. Let me share some cutting-edge examples:</p>
-
-<h4 id="weather-forecasting">Weather Forecasting</h4>
-
-<p>The advancements in game AI have found significant applications beyond the game board, one of which is weather forecasting. Google’s MetNet-3<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> leverages techniques reminiscent of those used in game AI to tackle the complexities of atmospheric dynamics. By integrating the data assimilation and simulation processes into a single neural network pass, MetNet-3 can provide high-resolution weather predictions up to 24 hours ahead, covering variables such as precipitation, temperature, wind, and dew point. This model outperforms traditional physics-based numerical weather prediction methods, achieving temporal resolutions as fine as two minutes and spatial resolutions of one to four kilometers.</p>
-
-<h4 id="drug-discovery">Drug Discovery</h4>
-
-<p>In the realm of drug discovery, AI techniques refined in game-playing applications are accelerating research and development. Insilico Medicine’s AI-generated drug for idiopathic pulmonary fibrosis (IPF)<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> is a prime example. Their AI system, which includes platforms like PandaOmics and Chemistry42, identified a novel therapeutic target (TNIK) and designed a small molecule (INS018_055) for IPF treatment in just 18 months, a process that traditionally takes years. This AI-driven approach mirrors game AI’s method of identifying key strategic points and developing optimal strategies to exploit them. The rapid progression of this AI-designed drug, now in Phase 2 clinical trials, underscores the potential of AI in pharmaceutical research.</p>
-
-<h4 id="molecular-biology">Molecular Biology</h4>
-
-<p>In molecular biology, the impact of AI is profoundly illustrated by AlphaFold 3<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">4</a></sup>, which extends the capabilities of its predecessor by predicting the structure and interactions of a wide range of biological molecules, including proteins, DNA, RNA, and small molecules. This progression from predicting protein structures to modeling complex molecular interactions showcases the significant leap in AI’s application in biology. AlphaFold 3’s enhanced architecture, featuring an improved Evoformer module and a diffusion network, has achieved a substantial improvement in the accuracy of predicting protein interactions, further advancing our understanding of cellular biology.</p>
-
-<h3 id="the-common-thread">The Common Thread</h3>
-
-<p>What fascinates me most is the common thread running through all these applications – the ability of AI to learn complex patterns and make decisions in high-dimensional, uncertain environments. Whether it’s navigating the vast possibility space of Go, predicting chaotic weather systems, or exploring the intricate world of molecular structures, AI is proving to be a powerful tool.</p>
-
-<h3 id="looking-ahead">Looking Ahead</h3>
-
-<p>As we stand at this exciting juncture, I can’t help but wonder: what’s next? Which field will see the next AlphaZero-like breakthrough? How might these AI techniques reshape your industry?</p>
-
-<p>One thing is certain – we’re not just spectators in this AI renaissance. We’re potential collaborators, innovators, and pioneers. The games AI has learned to play have prepared it for the greatest game of all – advancing human knowledge and capabilities across all fields of endeavor.</p>
-
-<p>I’m eager to hear your thoughts. How do you see AI impacting your field in the coming years?</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:0">
-      <p><a href="https://www.nytimes.com/2024/07/10/world/asia/lee-saedol-go-ai.html" rel="external nofollow noopener" target="_blank">NYTimes - Defeated by A.I., a Legend in the Board Game Go Warns: Get Ready for What’s Next</a> <a href="#fnref:0" class="reversefootnote" role="doc-backlink">↩</a></p>
-    </li>
-    <li id="fn:1">
-      <p><a href="https://research.google/blog/metnet-3-a-state-of-the-art-neural-weather-model-available-in-google-products/" rel="external nofollow noopener" target="_blank">Google Research - MetNet-3</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
-    </li>
-    <li id="fn:2">
-      <p><a href="https://cen.acs.org/physical-chemistry/computational-chemistry/Insilico-reveals-soup-to-nuts-process-for-AI-generated-lung-fibrosis-drug/102/web/2024/03" rel="external nofollow noopener" target="_blank">Chemical &amp; Engineering News - Insilico Reveals AI-Generated Drug for Lung Fibrosis</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
-    </li>
-    <li id="fn:3">
-      <p><a href="https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/#future-cell-biology" rel="external nofollow noopener" target="_blank">Google Blog - AlphaFold 3</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
-    </li>
-  </ol>
-</div>
+<p>https://github.com/limyewjin/llm-tutorial-length</p>
 
   </article>
 
@@ -212,12 +175,6 @@ The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/llm-tutorial-2/">Quick Prompt Engineering Tip</a>
-  </li>
-
-  
-
-  <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/llm-tutorial-1/">Quick Prompt Engineering Tip</a>
   </li>
 
@@ -225,6 +182,12 @@ The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/bullshit-ai-jobs/">What's Next?</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/what-next/">What's Next?</a>
   </li>
 
 </div>

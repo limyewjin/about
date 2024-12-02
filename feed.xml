@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-12-02T03:25:46+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">The Mechanical Pencil I Use</title><link href="https://www.yewjin.com/blog/2024/mechanical-pencils/" rel="alternate" type="text/html" title="The Mechanical Pencil I Use" /><published>2024-12-01T08:00:00+00:00</published><updated>2024-12-01T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/mechanical-pencils</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/mechanical-pencils/"><![CDATA[<p>You know that saying about cameras - the best one is the one you have with you? Well, I’ve found the same holds true for mechanical pencils. And after years of frustration with lead-leaking pencils staining my clothes and stabbing me through my pockets, I found my perfect everyday companion a while back and finally got arond to touting it: the <a href="https://www.amazon.com/Pentel-Mechanical-Pencil-Kerry-P1035-AD/dp/B0013NE3VA">Pentel Sharp Kerry</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://www.yewjin.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.yewjin.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-12-02T03:33:59+00:00</updated><id>https://www.yewjin.com/feed.xml</id><title type="html">Yew Jin</title><subtitle>About Yew Jin. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Quick Prompt Engineering Tip</title><link href="https://www.yewjin.com/blog/2024/llm-tutorial-3/" rel="alternate" type="text/html" title="Quick Prompt Engineering Tip" /><published>2024-12-01T08:00:01+00:00</published><updated>2024-12-01T08:00:01+00:00</updated><id>https://www.yewjin.com/blog/2024/llm-tutorial-3</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/llm-tutorial-3/"><![CDATA[<p>If we can provide a model with trusted, relevant information, we can guide it to compose answers grounded in that knowledge rather than relying on its training data alone. But how we present this information matters significantly.</p>
+
+<p>I recently tested different prompting patterns across Claude, GPT-4, and Gemini where the focus was on two key variables:</p>
+<ol>
+  <li>Document placement (context before vs. after the question)</li>
+  <li>Quote requirements (explicit vs. implicit)</li>
+</ol>
+
+<p>Key findings from testing across models:</p>
+<ul>
+  <li>Document-first prompts consistently produced more reliable results - like giving someone a map before asking for directions</li>
+  <li>Quote requests provided an additional safety net against hallucinations, though the impact was smaller than I originally expected</li>
+  <li>Even these “smaller” models (Haiku, GPT-4o-mini, Gemini 1.5) handled these tasks well, showing how base capabilities have improved</li>
+</ul>
+
+<p>Key takeaways:</p>
+<ol>
+  <li>When building RAG systems, place your context before questions.</li>
+  <li>When reliability is crucial, add quote requirements as an extra verification layer.</li>
+</ol>
+
+<p>Code and full examples: https://github.com/limyewjin/llm-tutorial-grounding</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Grounding is key, but how should you present the info to LLMs?]]></summary></entry><entry><title type="html">The Mechanical Pencil I Use</title><link href="https://www.yewjin.com/blog/2024/mechanical-pencils/" rel="alternate" type="text/html" title="The Mechanical Pencil I Use" /><published>2024-12-01T08:00:00+00:00</published><updated>2024-12-01T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/mechanical-pencils</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/mechanical-pencils/"><![CDATA[<p>You know that saying about cameras - the best one is the one you have with you? Well, I’ve found the same holds true for mechanical pencils. And after years of frustration with lead-leaking pencils staining my clothes and stabbing me through my pockets, I found my perfect everyday companion a while back and finally got arond to touting it: the <a href="https://www.amazon.com/Pentel-Mechanical-Pencil-Kerry-P1035-AD/dp/B0013NE3VA">Pentel Sharp Kerry</a></p>
 
 <p>Let me back up a bit. Like many of us, I’ve had a love-hate relationship with mechanical pencils. While Wirecutter <a href="https://www.nytimes.com/wirecutter/reviews/best-mechanical-pencils/">crowned</a> the Blick Premier as their top pick (and it’s indeed an excellent pencil), I found my perfect match in their “Also great” pick: the Pentel Sharp Kerry. It solves the one problem that matters most to me - it has a cap. Simple, right? But this isn’t just any cap. The designers at Pentel clearly spent some serious time thinking about how people actually use their pencils.</p>
 
@@ -11,7 +32,51 @@
 
 <p>Is it perfect? Maybe not. But it’s the first mechanical pencil I’ve actually wanted to carry with me every day. And isn’t that what really matters? Because just like that camera in your phone, the best mechanical pencil is absolutely the one you’ll actually have with you when you need it.</p>
 
-<p>And for me, that’s the Kerry. No more lead-stained pockets. No more accidentally stabbing myself. Just a reliable writing tool that’s ready when I am. Sometimes the best solutions are the simplest ones - even if it took a ton of pencil evolution and testing on my part to get there.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I tried a lot of mechanical pencils; this is the one I use and why]]></summary></entry><entry><title type="html">What’s Next?</title><link href="https://www.yewjin.com/blog/2024/bullshit-ai-jobs/" rel="alternate" type="text/html" title="What’s Next?" /><published>2024-08-03T08:00:00+00:00</published><updated>2024-08-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/bullshit-ai-jobs</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/bullshit-ai-jobs/"><![CDATA[<p>John Maynard Keynes predicted a 15-hour workweek, but we’ve instead created millions of pointless jobs. It’s like how we have 100x more powerful machines and storage, yet our calculator apps have bloated to use 99x of that improvement.</p>
+<p>And for me, that’s the Kerry. No more lead-stained pockets. No more accidentally stabbing myself. Just a reliable writing tool that’s ready when I am. Sometimes the best solutions are the simplest ones - even if it took a ton of pencil evolution and testing on my part to get there.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I tried a lot of mechanical pencils; this is the one I use and why]]></summary></entry><entry><title type="html">Quick Prompt Engineering Tip</title><link href="https://www.yewjin.com/blog/2024/llm-tutorial-1/" rel="alternate" type="text/html" title="Quick Prompt Engineering Tip" /><published>2024-11-24T08:00:00+00:00</published><updated>2024-11-24T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/llm-tutorial-1</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/llm-tutorial-1/"><![CDATA[<p>The saying goes, “Writing is rewriting.” The same applies to LLMs! Just like how we ask humans to double-check their work, we can prompt LLMs to review and improve their responses.</p>
+
+<p>Here’s a simple example:</p>
+<ol>
+  <li>First prompt: “List 10 words ending in ‘ab’”</li>
+  <li>Chain prompt: “Now check if each word is valid. Show your analysis and replace any invalid ones.”</li>
+</ol>
+
+<p>This simple chaining technique can lead to improved results. The key is asking the model to:</p>
+<ul>
+  <li>Show its reasoning</li>
+  <li>Break down its analysis</li>
+  <li>Replace incorrect answers</li>
+</ul>
+
+<p>Important caveat: Like any prompt engineering technique, results vary based on the task complexity and model capability. I tested this with base-tier models across OpenAI, Anthropic, and Google - while the improvement wasn’t dramatic, the models were able to identify errors from their initial responses without introducing new ones during the chaining step.</p>
+
+<p>Always test your prompting strategies! Check out my experiment code here: https://github.com/limyewjin/llm-tutorial-chaining</p>]]></content><author><name></name></author><summary type="html"><![CDATA[The saying goes, "Writing is rewriting." The same applies to LLMs!]]></summary></entry><entry><title type="html">Quick Prompt Engineering Tip</title><link href="https://www.yewjin.com/blog/2024/llm-tutorial-2/" rel="alternate" type="text/html" title="Quick Prompt Engineering Tip" /><published>2024-11-24T08:00:00+00:00</published><updated>2024-11-24T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/llm-tutorial-2</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/llm-tutorial-2/"><![CDATA[<p>One common requirement I have using LLMs is controlling their response length (maximum number of words, minimum number of words, number of bullet points, etc.). I have done a few tests to share some key insights for controlling length in LLMs.</p>
+
+<h1 id="response-text-length">Response Text Length</h1>
+
+<ul>
+  <li>“At Most X Words” What surprised me most was how consistently the “at most X words” format outperformed other approaches. While exact word counts tend to overshoot by 10-15%, the “at most” modifier acts like a reliable ceiling. In our tests, the various models from Anthropic, Google, and OpenAI consistently stayed under the specified limit.</li>
+</ul>
+
+<p>A Practical Framework for Length Control:</p>
+<ol>
+  <li>For Strict Upper Bounds: Use “at most X words” - it’s your most reliable tool across all models. I’ve found this especially crucial for applications with strict space constraints.</li>
+  <li>For Minimum Length Requirements: The “at least X words” modifier works, but expect significant variations. In our tests, outputs ranged from 119 to 238 words for a 100-word minimum requirement. If you need longer content, this is actually a feature, not a bug.</li>
+  <li>Avoid Common Pitfalls:
+    <ul>
+      <li>Qualitative descriptors (“short,” “very short”) showed the highest variance in our tests</li>
+      <li>Reading time estimates (“30 seconds long”) proved surprisingly inconsistent</li>
+      <li>The format of numbers (“100” vs “one hundred”) doesn’t significantly impact results</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="bullet-points">Bullet Points</h1>
+
+<p>As you might expect, using ordered lists (e.g., 1., 2., 3., …) works better than unordered, but really only for longer lists. The models across Anthropic, Google, and OpenAI show near-perfect precision for small to medium lists (3-20 points) but diverge significantly with larger requests. For instance, when asking for 50 points, OpenAI tends to overshoot while Anthropic often undershoots with ordered lists.</p>
+
+<p>What’s been your experience with controlling LLM output length? Have you noticed any patterns I might have missed in my testing? Let’s continue building our collective understanding of these fascinating tools.</p>
+
+<p>https://github.com/limyewjin/llm-tutorial-length</p>]]></content><author><name></name></author><summary type="html"><![CDATA[One common requirement I have using LLMs is controlling their response length]]></summary></entry><entry><title type="html">What’s Next?</title><link href="https://www.yewjin.com/blog/2024/bullshit-ai-jobs/" rel="alternate" type="text/html" title="What’s Next?" /><published>2024-08-03T08:00:00+00:00</published><updated>2024-08-03T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/bullshit-ai-jobs</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/bullshit-ai-jobs/"><![CDATA[<p>John Maynard Keynes predicted a 15-hour workweek, but we’ve instead created millions of pointless jobs. It’s like how we have 100x more powerful machines and storage, yet our calculator apps have bloated to use 99x of that improvement.</p>
 
 <p>In 2013, anthropologist David Graeber coined the term ‘bullshit jobs’ - roles so meaningless that even those doing them struggle to justify their existence. Fast forward to 2024, and AI is poised to automate many of these jobs.</p>
 
@@ -187,132 +252,4 @@ The last paragraph of my <a href="https://scholarbank.nus.edu.sg/handle/10635/13
 
 <p>The intersection of generative AI and Ethereum presents a compelling narrative. With Ethereum, there’s potential to create a new economic model for AI, where creators are compensated through smart contracts, and AI-generated content and services are traded on a decentralized marketplace. This could pave the way for fairer, more transparent economic systems for digital content and services. Moreover, as AI continues to evolve, integrating with Ethereum could ensure that the creators and developers behind AI innovations are directly rewarded for their contributions, fostering a more sustainable ecosystem for digital innovation.</p>
 
-<p>I am cautiously optimistic, but the success of Ethereum feels like a matter of “when” rather than “if.” I’m betting it’s Gen AI-related.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Gen AI + Ethereum]]></summary></entry><entry><title type="html">Estimating the Probability of Not Proposing an Ethereum Block</title><link href="https://www.yewjin.com/blog/2024/eth-validator-block-probability/" rel="alternate" type="text/html" title="Estimating the Probability of Not Proposing an Ethereum Block" /><published>2024-01-27T08:00:00+00:00</published><updated>2024-01-27T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/eth-validator-block-probability</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/eth-validator-block-probability/"><![CDATA[<p><strong>Plot</strong>: <a href="https://www.yewjin.com/assets/html/eth_block_probability.html">yewjin.com/assets/html/eth_block_probability.html</a> is a plot of the probabilities where you can fit in your own values.</p>
-
-<p><strong>Note (June 2024)</strong>: This blog post is updated regularly (ideally daily!) with the current eligible ETH value from the blockchain.</p>
-
-<p>As an Ethereum staker, one of the key aspects of participation in the network is decentralization … OK … nevermind it’s the opportunity to propose a block and hope for winning the block lottery. The probability of getting this chance, however, depends on several factors, most notably the total number of validators in the network and the number of validators you control. Here’s how to calculate the probability of not proposing a block over different time periods - an hour, a day, a week, or even a month. Because, admit it, you are only asking this question after not getting a block proposal for that long and you are asking: “WHAT ARE THE ODDS?!”</p>
-
-<p>The Ethereum PoS protocol, specifically in the context of block validation, operates with discrete time units called slots. A new block is proposed in each slot by a randomly selected validator. The probability of a specific validator being chosen for any given slot is inversely proportional to the total number of effective ETH balance of each validator. See <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/block-proposal/">Block Proposal (ethereum.org)</a></p>
-
-<ol>
-  <li><strong>Total Eligible ETH (N):</strong> The total amount of eligible ETH in the network. As of 2024-12-01 10:15, it’s approximately 34360118 ETH.</li>
-  <li><strong>Your ETH (V):</strong> The amount of ETH you have staked.</li>
-  <li><strong>Time Period (T):</strong> The duration for which you want to calculate the probability, measured in slots. (Note: The Ethereum network typically operates with a slot time of 12 seconds.)</li>
-</ol>
-
-<h3 id="calculating-the-probability">Calculating the Probability</h3>
-
-<p>The probability of not proposing a block in a single slot, for a user with V ETH, is calculated as follows:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Probability (Single Slot) = 1 - (V / N)
-</code></pre></div></div>
-
-<p>To extend this to a specific time period, T slots, the formula becomes:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Probability (T Slots) = (1 - (V / N))^T
-</code></pre></div></div>
-
-<p>Handy number of slots in various time periods</p>
-
-<ul>
-  <li><strong>For One Hour:</strong> With T = 300 slots (assuming 12 seconds per slot).</li>
-  <li><strong>For One Day:</strong> T = 7,200 slots.</li>
-  <li><strong>For One Week:</strong> T = 50,400 slots.</li>
-  <li><strong>For One Month:</strong> Approximating a month as 30 days, T = 216,000 slots.</li>
-</ul>
-
-<h2 id="probabilities-for-32-eth">Probabilities for 32 ETH</h2>
-
-<ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{32}{34360118}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{32}{34360118} \right)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{32}{34360118} \right)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{32}{34360118} \right)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{32}{34360118} \right)^{216000}\)</li>
-</ul>
-
-<h3 id="summary">Summary</h3>
-<ul>
-  <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 99.97%</li>
-  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 99.33%</li>
-  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 95.41%</li>
-  <li><strong>Chance of not proposing a block in one month:</strong> Approximately 81.78%</li>
-</ul>
-
-<h2 id="probabilities-for-3200-eth">Probabilities for 3200 ETH</h2>
-
-<ul>
-  <li><strong>Probability of not proposing a block in one slot:</strong> \(1 - \frac{3200}{34360118}\)</li>
-  <li><strong>One Hour (300 slots):</strong> \(\left( 1 - \frac{3200}{34360118} \right)^{300}\)</li>
-  <li><strong>One Day (7,200 slots):</strong> \(\left( 1 - \frac{3200}{34360118} \right)^{7200}\)</li>
-  <li><strong>One Week (50,400 slots):</strong> \(\left( 1 - \frac{3200}{34360118} \right)^{50400}\)</li>
-  <li><strong>One Month (approx. 30 days, 216,000 slots):</strong> \(\left( 1 - \frac{3200}{34360118} \right)^{216000}\)</li>
-</ul>
-
-<h3 id="summary-1">Summary</h3>
-<ul>
-  <li><strong>Chance of not proposing a block in one hour:</strong> Approximately 97.24%</li>
-  <li><strong>Chance of not proposing a block in one day:</strong> Approximately 51.14%</li>
-  <li><strong>Chance of not proposing a block in one week:</strong> Approximately 0.91%</li>
-  <li><strong>Chance of not proposing a block in one month:</strong> Practically 0% (very close to zero)</li>
-</ul>
-
-<h1 id="calculating-the-probability-of-proposing-at-least-b-blocks">Calculating the Probability of Proposing At Least B Blocks</h1>
-
-<p>To calculate the probability of proposing at least B blocks, we can use the Poisson distribution as an approximation for large T, where T is the total number of slots and p is the probability of proposing a block in a slot. The parameter lambda (λ) for the Poisson distribution is:</p>
-
-\[\lambda = T \times \left( \frac{V}{N} \right)\]
-
-<p>The cumulative probability of proposing at least B blocks is:</p>
-
-\[P(\text{proposing at least } B \text{ blocks}) = 1 - \sum_{k=0}^{B-1} \frac{\lambda^k e^{-\lambda}}{k!}\]
-
-<p>where \(\lambda = T \times \left( \frac{V}{N} \right)\).</p>
-
-<h3 id="example-probabilities-for-32-eth">Example Probabilities for 32 ETH</h3>
-
-<ul>
-  <li><strong>Probability of proposing at least 1 block in one day:</strong> \(1 - \sum_{k=0}^{0} \frac{\lambda_{1 \, day}^k e^{-\lambda_{1 \, day}}}{k!}\)</li>
-  <li><strong>Probability of proposing at least 2 blocks in one week:</strong> \(1 - \sum_{k=0}^{1} \frac{\lambda_{1 \, week}^k e^{-\lambda_{1 \, week}}}{k!}\)</li>
-  <li><strong>Probability of proposing at least 5 blocks in one month:</strong> \(1 - \sum_{k=0}^{4} \frac{\lambda_{1 \, month}^k e^{-\lambda_{1 \, month}}}{k!}\)</li>
-</ul>
-
-<p>Finally, if you want to see the latest statistics on block proposal frequency, see <a href="https://luckystaker.com/home/">LuckyStaker.com</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[When your solo staking setup isn't proposing, you are asking "WHAT ARE THE ODDS?!"]]></summary></entry><entry><title type="html">Nailed that one</title><link href="https://www.yewjin.com/blog/2024/nailed-that-one/" rel="alternate" type="text/html" title="Nailed that one" /><published>2024-01-20T08:00:00+00:00</published><updated>2024-01-20T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2024/nailed-that-one</id><content type="html" xml:base="https://www.yewjin.com/blog/2024/nailed-that-one/"><![CDATA[<p>In other words, $10K worth of Bitcoins bought today could be valued at $1M (or zero dollars) in only just a tew years.</p>
-<ul>
-  <li>Yew Jin, July 2014, <a href="https://docs.google.com/document/d/1-3R10vhbe5GgBeREda3nAXtlT5YpwEviBao340H3tgM/edit?usp=sharing">Bitcoin investment thesis</a></li>
-</ul>
-
-<p>Average price ~ July 2014: $531.13</p>
-
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/bitcoin-2014-2023-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/bitcoin-2014-2023-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/bitcoin-2014-2023-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/bitcoin-2014-2023.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-<p>Gotta say I kinda of nailed that one.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[You don't care, but I'm surprised at myself...]]></summary></entry><entry><title type="html">This is not fine fire</title><link href="https://www.yewjin.com/blog/2023/this-is-not-fine-fire/" rel="alternate" type="text/html" title="This is not fine fire" /><published>2023-10-01T08:00:00+00:00</published><updated>2023-10-01T08:00:00+00:00</updated><id>https://www.yewjin.com/blog/2023/this-is-not-fine-fire</id><content type="html" xml:base="https://www.yewjin.com/blog/2023/this-is-not-fine-fire/"><![CDATA[<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/this-is-not-fine-fire-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/this-is-not-fine-fire-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/this-is-not-fine-fire-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/this-is-not-fine-fire.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-<p>DALLE-3 and its text understanding capabilities are unreal y’all.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[DALLE-3 is 🔥]]></summary></entry></feed>
+<p>I am cautiously optimistic, but the success of Ethereum feels like a matter of “when” rather than “if.” I’m betting it’s Gen AI-related.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Gen AI + Ethereum]]></summary></entry></feed>

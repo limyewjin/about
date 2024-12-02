@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>The saying goes, “Writing is rewriting.” The same applies to LLMs! Just like how we ask humans to double-check their work, we can prompt LLMs to review and improve their responses.</p>
+
+<p>Here’s a simple example:</p>
+<ol>
+  <li>First prompt: “List 10 words ending in ‘ab’”</li>
+  <li>Chain prompt: “Now check if each word is valid. Show your analysis and replace any invalid ones.”</li>
+</ol>
+
+<p>This simple chaining technique can lead to improved results. The key is asking the model to:</p>
+<ul>
+  <li>Show its reasoning</li>
+  <li>Break down its analysis</li>
+  <li>Replace incorrect answers</li>
+</ul>
+
+<p>Important caveat: Like any prompt engineering technique, results vary based on the task complexity and model capability. I tested this with base-tier models across OpenAI, Anthropic, and Google - while the improvement wasn’t dramatic, the models were able to identify errors from their initial responses without introducing new ones during the chaining step.</p>
+
+<p>Always test your prompting strategies! Check out my experiment code here: https://github.com/limyewjin/llm-tutorial-chaining</p>
+</body></html>

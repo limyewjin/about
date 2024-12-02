@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>If we can provide a model with trusted, relevant information, we can guide it to compose answers grounded in that knowledge rather than relying on its training data alone. But how we present this information matters significantly.</p>
+
+<p>I recently tested different prompting patterns across Claude, GPT-4, and Gemini where the focus was on two key variables:</p>
+<ol>
+  <li>Document placement (context before vs. after the question)</li>
+  <li>Quote requirements (explicit vs. implicit)</li>
+</ol>
+
+<p>Key findings from testing across models:</p>
+<ul>
+  <li>Document-first prompts consistently produced more reliable results - like giving someone a map before asking for directions</li>
+  <li>Quote requests provided an additional safety net against hallucinations, though the impact was smaller than I originally expected</li>
+  <li>Even these “smaller” models (Haiku, GPT-4o-mini, Gemini 1.5) handled these tasks well, showing how base capabilities have improved</li>
+</ul>
+
+<p>Key takeaways:</p>
+<ol>
+  <li>When building RAG systems, place your context before questions.</li>
+  <li>When reliability is crucial, add quote requirements as an extra verification layer.</li>
+</ol>
+
+<p>Code and full examples: https://github.com/limyewjin/llm-tutorial-grounding</p>
+</body></html>

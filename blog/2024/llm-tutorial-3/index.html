@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Effective delegation by visioneering | Yew Jin</title>
+    <title>Quick Prompt Engineering Tip 3 - Grounding LLM Responses | Yew Jin</title>
     <meta name="author" content="Yew Jin  Lim">
-    <meta name="description" content="Visioneering is such a great word">
+    <meta name="description" content="Grounding is key, but how should you present the info to LLMs?">
     <meta name="keywords" content="Yew Jin, Yewjin, Yew Jin Lim, limyewjin, yewjinlim, yewjin.eth">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://www.yewjin.com/blog/2022/visioneering/">
+    <link rel="canonical" href="https://www.yewjin.com/blog/2024/llm-tutorial-3/">
     
     <!-- Dark Mode -->
     
@@ -109,68 +109,37 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Effective delegation by visioneering</h1>
-    <p class="post-meta">June 19, 2022</p>
+    <h1 class="post-title">Quick Prompt Engineering Tip 3 - Grounding LLM Responses</h1>
+    <p class="post-meta">December 1, 2024</p>
     <p class="post-tags">
-      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
 
     </p>
   </header>
 
   <article class="post-content">
-    <p>As a software engineering manager and a growing slate and scale of projects to lead, I have made delegation decisions largely based on intuition or just observing what other managers were doing.</p>
+    <p>If we can provide a model with trusted, relevant information, we can guide it to compose answers grounded in that knowledge rather than relying on its training data alone. But how we present this information matters significantly.</p>
 
-<p>Sure, there are management books which espouse theory, but let’s be honest — they make it sound more complicated than it needs to be, and I read them, but I just didn’t grok them. Take this this gem about <a href="https://en.wikipedia.org/wiki/Goal_setting#In_business" rel="external nofollow noopener" target="_blank">goal setting in business</a>:</p>
-<blockquote>
-  <p>In business, goal setting encourages participants to put in substantial effort. Also, because every member has defined expectations for their role, little room is left for inadequate, marginal effort to go unnoticed.</p>
+<p>I recently tested different prompting patterns across Claude, GPT-4, and Gemini where the focus was on two key variables:</p>
+<ol>
+  <li>Document placement (context before vs. after the question)</li>
+  <li>Quote requirements (explicit vs. implicit)</li>
+</ol>
 
-  <p>Managers cannot constantly drive motivation, or keep track of an employee’s work on a continuous basis. Goals are therefore an important tool for managers, since goals have the ability to function as a self-regulatory mechanism that helps employees prioritize tasks.</p>
-</blockquote>
+<p>Key findings from testing across models:</p>
+<ul>
+  <li>Document-first prompts consistently produced more reliable results - like giving someone a map before asking for directions</li>
+  <li>Quote requests provided an additional safety net against hallucinations, though the impact was smaller than I originally expected</li>
+  <li>Even these “smaller” models (Haiku, GPT-4o-mini, Gemini 1.5) handled these tasks well, showing how base capabilities have improved</li>
+</ul>
 
-<p>This doesn’t help me though: I need a playbook with specifics on how to structure and delegate effectively for software engineering projects that somehow relate back to the theory. How exactly do you go about this?</p>
+<p>Key takeaways:</p>
+<ol>
+  <li>When building RAG systems, place your context before questions.</li>
+  <li>When reliability is crucial, add quote requirements as an extra verification layer.</li>
+</ol>
 
-<p>Here’s my take: <em>visioneering</em>.</p>
-
-<h1 id="visioneering">Visioneering</h1>
-<p>I loosely define visioneering as the series of actions to take to build up a shared vision and long term goals for the team. At its core, visioneering consists of three parts:</p>
-
-<p>1 Defining a desirable and attainable goal
-  2 Communicating and getting consensus on the goal
-  3 Empowering teammates to achieve that goal</p>
-
-<h2 id="1-defining-a-desirable-and-attainable-goal">1. Defining a desirable and attainable goal</h2>
-<p>Setting challenging yet attainable goals with high impact. As a line manager, the goal given might be quite specific — “Get accuracy to at least 90%” or “Build a deployable system that does X, Y, and Z”. But even with such specifics there is often still large components to design and implement.</p>
-
-<p>As a director where you are given larger areas of focus, your goal is to set the direction of the project and team — “We will build a better ranking system by first scaling our data collection pipeline and building a robust evaluation metrics”.</p>
-
-<p>You should spend enough time to have a coherent topline goal, and to move onto the next step of communicating the goal, perhaps with the more senior members of the team at first, and to come back to refining your goal as you get more inputs and insights from others.</p>
-
-<h2 id="2-communicating-and-getting-consensus-on-the-goal">2. Communicating and getting consensus on the goal</h2>
-<p>A good rule of thumb as a manager is that you can’t never over-communicate. Even if you think you are repeating the same goal too many times, you would be surprised at how teammates appreciate being engaged in discussions about goals multiple times as they develop different perspectives over time. This is particularly true for big pivots in directions.</p>
-
-<p>In my experience, as the scope of the goal becomes more abstract, more of the effort should be spent discussing on why the goal is important. This is because with specificity engineers tend to gravitate towards problem-solving immediately, as opposed to more abstract goals which invite questions. (*)</p>
-
-<p>(*) Correlation is not causation of course, and another plausible explanation is that having larger scope problems correlates with higher level thinking and working with more senior engineers who tend to be better at questioning the whys of projects.</p>
-
-<p>There are three specific ways I like to communicate goals: A) one-pagers, B) presentations, and C) in-person discussions.</p>
-
-<p>A) One-pagers: Write down your ideas and goals in prose concisely. This helps both the recipient (short and sweet summary), and yourself (collect your thoughts).</p>
-
-<p>B) Presentations: Communicates your thoughts effectively in a group setting, also good to have presentations which are easily shared with partners and leadership to convey expectations. (Let’s be honest, the pointy-heads aren’t going to read your one-pagers)</p>
-
-<p>C) In-person discussions: Nothing beats face-to-face discussions to solicit honest and useful feedback.</p>
-
-<h2 id="3-empowering-teammates-to-achieve-that-goal">3. Empowering teammates to achieve that goal</h2>
-<p>If the scope of the project is small enough, implementation can start immediately, but once the project grows to an effort requiring a team over multiple weeks or months, this is where I would have called “delegation” previously would start as an external observer.</p>
-
-<p>Here’s my heuristic: you ask your team (or specific individuals) to write down how they are going to achieve the end goal (e.g., a design doc). And in fact if the project is still large enough, it could even be another visioneering task for them.</p>
-
-<p>Why do this? <a href="https://en.wikipedia.org/wiki/Goal_setting#Employee_motivation" rel="external nofollow noopener" target="_blank">Goal-commitment</a>:</p>
-<blockquote>
-  <p>Goal-commitment, the most influential moderator, becomes especially important when dealing with difficult or complex goals. If people lack commitment to goals, they lack motivation to reach them. To commit to a goal, one must believe in its importance or significance.</p>
-</blockquote>
-
-<p>By writing down in a document the ideas and steps, the team member feels more ownership of the process, and there should be processes in the organization that allow the design document to be shared internally so that it gets reviewed by others. This also empowers the teammate to get agreement on the next steps and allows for more effective implementation.</p>
+<p>Code and full examples: https://github.com/limyewjin/llm-tutorial-grounding</p>
 
   </article>
 
@@ -185,12 +154,6 @@
     <!-- Adds related posts to the end of an article -->
     <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
     <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/llm-tutorial-3/">Quick Prompt Engineering Tip 3 - Grounding LLM Responses</a>
-  </li>
-
   
 
   <li class="my-2">
@@ -213,6 +176,12 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/bullshit-ai-jobs/">What's Next?</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/what-next/">What's Next?</a>
   </li>
 
 </div>

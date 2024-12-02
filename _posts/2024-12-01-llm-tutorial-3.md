@@ -20,4 +20,4 @@ Key takeaways:
 1. When building RAG systems, place your context before questions.
 2. When reliability is crucial, add quote requirements as an extra verification layer.
 
-Code and full examples: https://github.com/limyewjin/llm-tutorial-grounding
+Code and full examples: [https://github.com/limyewjin/llm-tutorial-grounding](https://github.com/limyewjin/llm-tutorial-grounding)

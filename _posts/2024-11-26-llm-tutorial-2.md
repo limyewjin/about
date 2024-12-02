@@ -25,4 +25,5 @@ As you might expect, using ordered lists (e.g., 1., 2., 3., …) works better th
 
 What's been your experience with controlling LLM output length? Have you noticed any patterns I might have missed in my testing? Let's continue building our collective understanding of these fascinating tools.
 
-https://github.com/limyewjin/llm-tutorial-length
+Code & data here: [https://github.com/limyewjin/llm-tutorial-length](https://github.com/limyewjin/llm-tutorial-length)
+

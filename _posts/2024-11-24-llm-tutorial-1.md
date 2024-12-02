@@ -18,4 +18,4 @@ This simple chaining technique can lead to improved results. The key is asking t
 
 Important caveat: Like any prompt engineering technique, results vary based on the task complexity and model capability. I tested this with base-tier models across OpenAI, Anthropic, and Google - while the improvement wasn't dramatic, the models were able to identify errors from their initial responses without introducing new ones during the chaining step.
 
-Always test your prompting strategies! Check out my experiment code here: https://github.com/limyewjin/llm-tutorial-chaining
+Always test your prompting strategies! Check out my experiment code here: [https://github.com/limyewjin/llm-tutorial-chaining](https://github.com/limyewjin/llm-tutorial-chaining)
